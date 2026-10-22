@@ -1,0 +1,5 @@
+# While the site is in testing, every page carries a noindex tag. Crawling stays allowed so Google can see that tag.
+User-agent: *
+Allow: /
+
+Sitemap: https://ruvixsa.com/sitemap.xml
