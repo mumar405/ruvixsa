@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>try{var d=document.documentElement,t=null;try{t=localStorage.getItem("rvt")}catch(e){}if(t!=="light"&&t!=="dark")t=(window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark";d.setAttribute("data-theme",t)}catch(e){}</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- TEMPORARY: remove the next line when you are ready for Google to index this page -->
+<meta name="robots" content="noindex, nofollow">
+<title>Free Schema Markup Generator (JSON-LD) | Ruvixsa</title>
+<meta name="description" content="Free JSON-LD schema markup generator. Create Article, Product, FAQ and Organization schema, single or multiple, for WordPress, Shopify and Blogger.">
+<link rel="canonical" href="https://ruvixsa.com/schema-generator/">
+<meta name="theme-color" content="#070914">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ruvixsa">
+<meta property="og:title" content="Free Schema Markup Generator (JSON-LD) | Ruvixsa">
+<meta property="og:description" content="Free JSON-LD schema markup generator. Create Article, Product, FAQ and Organization schema, single or multiple, for WordPress, Shopify and Blogger.">
+<meta property="og:url" content="https://ruvixsa.com/schema-generator/">
+<meta property="og:image" content="https://ruvixsa.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Schema Markup Generator (JSON-LD) | Ruvixsa">
+<meta name="twitter:description" content="Free JSON-LD schema markup generator. Create Article, Product, FAQ and Organization schema, single or multiple, for WordPress, Shopify and Blogger.">
+<meta name="twitter:image" content="https://ruvixsa.com/og-image.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "@id": "https://ruvixsa.com/schema-generator/#app", "name": "Ruvixsa Schema Markup Generator", "url": "https://ruvixsa.com/schema-generator/", "description": "Free JSON-LD schema markup generator. Create Article, Product, FAQ and Organization schema, single or multiple, for WordPress, Shopify and Blogger.", "applicationCategory": "DeveloperApplication", "operatingSystem": "Any (web-based)", "browserRequirements": "Requires JavaScript", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "provider": {"@type": "Organization", "name": "Ruvixsa", "url": "https://ruvixsa.com/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ruvixsa.com/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://ruvixsa.com/#tools"}, {"@type": "ListItem", "position": 3, "name": "Schema Generator", "item": "https://ruvixsa.com/schema-generator/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is this schema markup generator free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The tool is free to use, and the code is generated in your browser from the details you enter."}}, {"@type": "Question", "name": "What is JSON-LD?", "acceptedAnswer": {"@type": "Answer", "text": "JSON-LD is a way of writing structured data as a small block of code. It is the format Google recommends for structured data, and you paste it into your page without changing what visitors see."}}, {"@type": "Question", "name": "Does schema markup improve rankings?", "acceptedAnswer": {"@type": "Answer", "text": "Schema markup is not a ranking guarantee. It helps search engines understand your content and can make a page eligible for some rich results when the markup matches the visible page."}}, {"@type": "Question", "name": "Does FAQ schema still show rich results in Google?", "acceptedAnswer": {"@type": "Answer", "text": "No. Google stopped showing FAQ rich results in Search on 7 May 2026. FAQPage is still a valid Schema.org type and the markup can stay on a page, but you should not expect FAQ dropdowns in search results."}}, {"@type": "Question", "name": "Does schema help my site appear in AI answers?", "acceptedAnswer": {"@type": "Answer", "text": "Google says no special markup is required for its AI features, and no search engine promises citations for adding schema. Clear, accurate, visible content matters most. Schema can still describe what a page is and who published it."}}, {"@type": "Question", "name": "Which schema type should I use?", "acceptedAnswer": {"@type": "Answer", "text": "Use Article for blog posts, Product for items you sell, Organization for your brand, and BreadcrumbList for a visible navigation trail. Only add a type when it matches content that is actually on the page."}}, {"@type": "Question", "name": "How do I test my schema?", "acceptedAnswer": {"@type": "Answer", "text": "Paste your code into the Schema Markup Validator at validator.schema.org. For types that Google supports, you can also use Google's Rich Results Test. Test your schema before publishing it."}}]}]}</script>
+<style>
+:root{--bg:#f4f6fb;--card:#fff;--text:#172033;--muted:#667085;--p:#635bff;--p2:#4f46e5;--border:#e4e7ec;--soft:#f8f9fc;--ok:#067647;--warn:#b54708;--shadow:0 18px 50px rgba(31,41,55,.10)}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#eef1ff,#f8fafc 430px);color:var(--text)}
+.wrap{max-width:1160px;margin:auto;padding:28px 18px 60px}.hero{text-align:center;padding:25px 10px 25px}.badge{display:inline-block;background:#ebe9ff;color:#4f46e5;padding:7px 13px;border-radius:999px;font-size:13px;font-weight:800;margin-bottom:13px}h1{font-size:clamp(30px,5vw,48px);margin:0 0 10px;letter-spacing:-1.5px}.hero p{max-width:760px;margin:auto;color:var(--muted);line-height:1.65}
+.wizard{background:#fff;border:1px solid var(--border);border-radius:24px;box-shadow:var(--shadow);overflow:hidden}.steps{display:flex;border-bottom:1px solid var(--border);background:#fbfbfd}.step{flex:1;padding:15px 8px;text-align:center;font-size:13px;font-weight:800;color:#98a2b3;position:relative}.step.active{color:var(--p2)}.step.active:after{content:"";position:absolute;left:15%;right:15%;bottom:0;height:3px;background:var(--p);border-radius:5px}
+.content{padding:30px}.screen{display:none}.screen.active{display:block}.screen h2{margin:0 0 8px;font-size:26px}.sub{color:var(--muted);margin:0 0 24px;line-height:1.55}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.schema-grid{grid-template-columns:repeat(3,1fr)}.card{border:1.5px solid var(--border);background:#fff;border-radius:16px;padding:20px 14px;cursor:pointer;text-align:center;transition:.18s;min-height:140px;display:flex;flex-direction:column;align-items:center;justify-content:center;font:inherit;color:inherit}.card:hover{transform:translateY(-3px);border-color:#aaa4ff;box-shadow:0 10px 28px rgba(99,91,255,.10)}.card.selected{border-color:var(--p);background:#f5f3ff;box-shadow:0 0 0 3px rgba(99,91,255,.12)}
+.brand-icon{width:56px;height:56px;border-radius:15px;display:flex;align-items:center;justify-content:center;margin-bottom:10px;font-weight:900;font-size:28px;box-shadow:0 7px 16px rgba(16,24,40,.10)}.wp-icon{background:#21759b;color:#fff;font-family:Georgia,serif;border-radius:50%;font-size:35px}.shopify-icon{background:#95bf47;color:#fff}.blogger-icon{background:#f57c00;color:#fff}.custom-icon{background:#eef0f5;color:#475467}.schema-icon{background:#f5f6fa;color:#344054}.card.schema.selected .schema-icon{background:#ebe9ff}
+.card strong{font-size:16px}.card small{display:block;color:var(--muted);margin-top:7px;line-height:1.35}.selection{margin-top:22px;padding:14px 16px;border-radius:12px;background:var(--soft);color:#475467;font-size:14px}.selection b{color:#172033}
+.nav{display:flex;justify-content:space-between;gap:12px;margin-top:30px;padding-top:22px;border-top:1px solid var(--border)}.btn{border:0;border-radius:12px;padding:12px 19px;font-size:14px;font-weight:800;cursor:pointer}.primary{background:linear-gradient(135deg,var(--p),var(--p2));color:#fff;box-shadow:0 8px 18px rgba(79,70,229,.22)}.secondary{background:#f2f4f7;color:#344054}.btn:disabled{opacity:.45;cursor:not-allowed}
+.form-layout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(300px,.75fr);gap:22px}.panel{border:1px solid var(--border);border-radius:18px;background:#fff;padding:20px}.panel h3{margin:0 0 5px}.hint{color:var(--muted);font-size:13px;margin:0 0 18px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{position:relative;display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:13px;font-weight:800;display:flex;align-items:center;gap:6px;flex-wrap:wrap;padding-right:22px}.field-help{display:none}.field-help-trigger{position:absolute;top:0;right:0;border:0;background:transparent;padding:2px;color:#4f46e5;font-size:16px;line-height:1;font-weight:800;cursor:pointer}.field-help-trigger:hover{text-decoration:underline}.field input,.field textarea,.field select{width:100%;border:1px solid #d0d5dd;border-radius:10px;padding:11px 12px;font:inherit;color:var(--text);background:#fff;outline:none}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--p);box-shadow:0 0 0 3px rgba(99,91,255,.10)}textarea{min-height:90px;resize:vertical}.optional{font-weight:500;color:#98a2b3}
+.preview{background:#0f172a;color:#e2e8f0;border-radius:14px;padding:16px;min-height:260px;overflow:auto}.preview pre{margin:0;white-space:pre-wrap;word-break:break-word;font-size:12px;line-height:1.55}.notice{margin-top:15px;padding:12px 14px;border-radius:11px;background:#fff7ed;color:#9a3412;font-size:13px;line-height:1.5}.check{margin-top:15px;padding:12px 14px;border-radius:11px;background:#ecfdf3;color:var(--ok);font-size:13px}
+.repeat-row{border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:12px;background:#fafbfc}.repeat-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.repeat-head strong{font-size:14px}.mini{border:0;border-radius:8px;padding:7px 10px;cursor:pointer;font-weight:700;background:#fee4e2;color:#b42318}.add{border:1px dashed #a8a2ff;background:#f8f7ff;color:var(--p2);width:100%;padding:11px;border-radius:10px;font-weight:800;cursor:pointer}
+.output{display:grid;grid-template-columns:1fr 1fr;gap:20px}.preview-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}.preview-badge{font-size:11px;font-weight:800;padding:6px 9px;border-radius:999px;background:#ecfdf3;color:#027a48;white-space:nowrap}.schema-preview{border:1px solid #d0d5dd;border-radius:14px;background:#f8fafc;min-height:430px;padding:18px;overflow:auto}.preview-empty{min-height:390px;display:flex;align-items:center;justify-content:center;text-align:center;color:#98a2b3;font-size:13px}.pv-page{max-width:680px;margin:0 auto;background:#fff;border:1px solid #e4e7ec;border-radius:12px;padding:20px;box-shadow:0 2px 8px rgba(16,24,40,.05);font-family:Arial,sans-serif;color:#172033}.pv-page h4{font-size:22px;margin:0 0 10px}.pv-page h5{font-size:16px;margin:18px 0 8px}.pv-meta{font-size:12px;color:#667085;margin-bottom:14px}.pv-text{font-size:14px;line-height:1.6;color:#475467}.pv-price{font-size:22px;font-weight:800;margin:10px 0}.pv-stars{font-size:14px;margin:8px 0}.pv-img{height:150px;border-radius:10px;background:#eef2f6;display:flex;align-items:center;justify-content:center;color:#98a2b3;margin-bottom:16px;overflow:hidden}.pv-img img{width:100%;height:100%;object-fit:cover}.pv-list{padding-left:20px;margin:8px 0}.pv-list li{margin:6px 0}.pv-faq{border:1px solid #e4e7ec;border-radius:10px;margin-top:10px}.pv-faq summary{cursor:pointer;padding:13px;font-weight:700}.pv-faq-answer{padding:0 13px 13px;color:#475467;line-height:1.55}.pv-breadcrumb{font-size:12px;color:#667085;margin-bottom:14px}.pv-btn{display:inline-block;border-radius:8px;padding:9px 13px;background:#172033;color:#fff;font-size:13px;font-weight:700}.pv-code{background:#101828;color:#e2e8f0;border-radius:9px;padding:14px;font:12px/1.5 monospace;white-space:pre-wrap}.pv-note{font-size:12px;color:#667085;background:#f9fafb;border-radius:8px;padding:10px;margin-top:12px}.output textarea{width:100%;min-height:430px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px}.out-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}.faq-style{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:10px}.style-btn{border:1px solid var(--border);background:#fff;border-radius:10px;padding:10px;cursor:pointer;font-weight:700}.style-btn.active{border-color:var(--p);background:#f5f3ff;color:var(--p2)}
+.footer{text-align:center;color:#98a2b3;font-size:13px;margin-top:18px}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}.schema-grid{grid-template-columns:repeat(2,1fr)}.form-layout,.output{grid-template-columns:1fr}.fields{grid-template-columns:1fr}}
+@media(max-width:520px){.wrap{padding:14px 10px 40px}.content{padding:20px 14px}.grid,.schema-grid{grid-template-columns:1fr 1fr;gap:10px}.card{min-height:125px;padding:14px 8px}.step{font-size:11px;padding:13px 4px}.fields{gap:12px}.faq-style{grid-template-columns:1fr 1fr}}
+
+.guide{margin:0 0 20px;border:1px solid #ddd9ff;background:linear-gradient(135deg,#faf9ff,#fff);border-radius:16px;overflow:hidden}
+.guide-head{padding:17px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer}
+.guide-title{display:flex;align-items:center;gap:11px}.guide-icon{width:40px;height:40px;border-radius:11px;background:#ebe9ff;color:#4f46e5;display:flex;align-items:center;justify-content:center;font-size:21px}
+.guide-head strong{font-size:15px}.guide-head small{display:block;color:#667085;margin-top:3px}
+.guide-toggle{border:0;background:#fff;border:1px solid #d9d6ff;color:#4f46e5;border-radius:9px;padding:7px 10px;font-weight:800;cursor:pointer}
+.guide-body{padding:0 18px 18px;border-top:1px solid #eeeaff}.guide-body.hidden{display:none}
+.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}.guide-box{background:#fff;border:1px solid #eaecf0;border-radius:12px;padding:13px}.guide-box b{font-size:12px}.guide-box p{margin:6px 0 0;color:#667085;font-size:12px;line-height:1.5}
+.guide-tip{margin-top:13px;padding:11px 13px;border-radius:10px;background:#f2f4f7;color:#475467;font-size:12px;line-height:1.5}
+.field-guide-note{display:flex;gap:8px;align-items:center;margin:0 0 16px;padding:9px 12px;border:1px solid #e4e7ec;border-radius:10px;background:#fbfcfe;color:#667085;font-size:11px;line-height:1.45}
+.field-guide-note span{font-size:14px;line-height:1;color:#4f46e5}
+.help-modal{display:none;position:fixed;inset:0;z-index:9999}
+.help-modal.open{display:block}
+.help-backdrop{position:absolute;inset:0;background:rgba(15,23,42,.48);backdrop-filter:blur(2px)}
+.help-dialog{position:relative;width:min(520px,calc(100% - 28px));margin:12vh auto 0;background:#fff;border:1px solid #e4e7ec;border-radius:18px;box-shadow:0 24px 70px rgba(15,23,42,.24);padding:24px}
+.help-close{position:absolute;right:12px;top:10px;border:0;background:#f2f4f7;color:#475467;width:32px;height:32px;border-radius:9px;font-size:22px;line-height:1;cursor:pointer}
+.help-dialog-icon{width:40px;height:40px;border-radius:11px;background:#ebe9ff;color:#4f46e5;display:flex;align-items:center;justify-content:center;font-weight:900;margin-bottom:12px}
+.help-dialog h3{margin:0 35px 16px 0;font-size:20px}
+.help-section{border:1px solid #eaecf0;border-radius:11px;padding:12px 13px;margin-top:9px;background:#fbfcfe}
+.help-section b{font-size:12px;color:#172033}
+.help-section p{margin:5px 0 0;color:#667085;font-size:12px;line-height:1.55}
+@media(max-width:520px){.help-dialog{margin:8vh auto 0;padding:20px}.field-help-trigger{font-size:10px}}
+@media(max-width:700px){.guide-grid{grid-template-columns:1fr}}
+
+.validation-summary{display:none;margin:0 0 16px;padding:12px 14px;border:1px solid #fecdca;background:#fff5f4;color:#b42318;border-radius:11px;font-size:13px;line-height:1.5}.validation-summary.show{display:block}.field.invalid input,.field.invalid textarea,.field.invalid select{border-color:#f04438!important;box-shadow:0 0 0 3px rgba(240,68,56,.08)!important}.field-error{display:none;color:#b42318;font-size:11px;line-height:1.35;margin-top:-2px}.field.invalid .field-error{display:block}.field.valid input,.field.valid textarea,.field.valid select{border-color:#12b76a}.validation-note{margin-top:12px;padding:10px 12px;border-radius:10px;background:#f8fafc;color:#667085;font-size:12px;line-height:1.45}
+.style-btn:disabled{opacity:.45;cursor:not-allowed;pointer-events:none;background:#f5f5f5;color:#9ca3af;border-color:#e5e7eb}.style-btn:disabled:hover{transform:none;box-shadow:none}
+
+.rx-h,.rx-f{--rb:#070914;--rl:#222741;--rt:#f4f6fb;--rm:#b3bad0;--rg:#2dd4bf;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+html[data-theme="light"] .rx-h,html[data-theme="light"] .rx-f{--rb:#f6f7fb;--rl:#e0e4f0;--rt:#12152a;--rm:#4a5474;--rg:#0d9488}
+.rx-h{position:sticky;top:0;z-index:30;border-bottom:1px solid var(--rl);background:var(--rb);background:color-mix(in srgb,var(--rb) 82%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.rx-in{max-width:1160px;margin:0 auto;padding:12px 18px;display:flex;align-items:center;justify-content:space-between}
+.rx-logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;letter-spacing:-.02em;color:var(--rt);text-decoration:none}
+.rx-logo svg{width:38px;height:38px}
+.rx-links{display:flex;align-items:center}
+.rx-links a{color:var(--rm);text-decoration:none;font-size:15px;margin-left:18px}
+.rx-links a:hover{color:var(--rt)}
+#rxtg{width:36px;height:36px;margin-left:14px;border-radius:50%;border:1px solid var(--rl);background:transparent;color:var(--rm);display:grid;place-items:center;cursor:pointer;padding:0}
+#rxtg:hover{color:var(--rg);border-color:var(--rg)}
+#rxtg svg{width:17px;height:17px}
+html[data-theme="dark"] #rxtg .moon{display:none}
+html[data-theme="light"] #rxtg .sun{display:none}
+.rx-f{border-top:1px solid var(--rl);background:var(--rb);color:var(--rm);font-size:14px;margin-top:40px}
+.rx-in2{max-width:1160px;margin:0 auto;padding:32px 18px 36px}
+.rx-fg{display:grid;gap:26px 20px;grid-template-columns:1fr 1fr}
+.rx-fb{grid-column:1/-1}
+@media(min-width:720px){.rx-fg{grid-template-columns:1.5fr 1fr 1fr 1fr}.rx-fb{grid-column:auto}}
+.rx-fb strong{font-size:18px;color:var(--rt)}
+.rx-fb p{margin:6px 0 0;max-width:260px}
+.rx-fh{margin:0 0 8px;font-weight:700;color:var(--rt);font-size:14px}
+.rx-fc a{display:block;color:var(--rm);text-decoration:none;padding:4px 0}
+.rx-fc a:hover{color:var(--rg)}
+.rx-fl{margin-top:28px;padding-top:18px;border-top:1px solid var(--rl);font-size:13px}
+</style>
+<style id="rx-theme">
+:root,html[data-theme="dark"]{--xb:#070914;--xc:#0e1120;--xs:#151a31;--xl:#222741;--xt:#f4f6fb;--xm:#b3bad0;--xa:#2dd4bf;--xsel:rgba(139,124,246,.16);color-scheme:dark}
+html[data-theme="light"]{--xb:#f6f7fb;--xc:#fff;--xs:#f1f3fa;--xl:#e0e4f0;--xt:#12152a;--xm:#4a5474;--xa:#0d9488;--xsel:rgba(139,124,246,.10);color-scheme:light}
+body{background:radial-gradient(800px 380px at 85% -5%,rgba(45,212,191,.13),transparent),radial-gradient(700px 380px at 0 10%,rgba(139,124,246,.12),transparent),var(--xb);color:var(--xt)}
+.hero p,.sub,.hint,.card small,.optional,.guide-head small,.guide-box p,.guide-tip,.field-guide-note,.help-section p{color:var(--xm)}
+.badge{background:rgba(45,212,191,.12);color:var(--xa);border:1px solid rgba(45,212,191,.3)}
+.wizard,.panel,.guide,.help-dialog{background:var(--xc);border-color:var(--xl)}
+.wizard{box-shadow:0 20px 60px rgba(0,0,0,.25)}
+html[data-theme="light"] .wizard{box-shadow:0 18px 50px rgba(31,41,55,.10)}
+.steps{background:var(--xs);border-color:var(--xl)}
+.step{color:var(--xm)}.step.active{color:var(--xa)}
+.step.active:after{background:linear-gradient(90deg,#8b7cf6,#2dd4bf)}
+.selection,.repeat-row,.guide-box,.guide-tip,.field-guide-note,.help-section{background:var(--xs);border-color:var(--xl)}
+.selection{color:var(--xm)}.selection b,.help-section b{color:var(--xt)}
+.card{background:var(--xc);border-color:var(--xl);color:var(--xt)}
+.card:hover{border-color:var(--xa);box-shadow:0 10px 28px rgba(45,212,191,.12)}
+.card.selected{border-color:var(--xa);background:var(--xsel);box-shadow:0 0 0 3px rgba(45,212,191,.14)}
+.schema-icon,.custom-icon{background:var(--xs);color:var(--xt)}
+.card.schema.selected .schema-icon{background:var(--xsel)}
+.nav{border-color:var(--xl)}
+.primary{background:linear-gradient(135deg,#8b7cf6,#2dd4bf);color:#071018;box-shadow:0 8px 18px rgba(45,212,191,.2)}
+.secondary{background:var(--xs);color:var(--xt);border:1px solid var(--xl)}
+.field input,.field textarea,.field select,.output textarea{background:var(--xb);border:1px solid var(--xl);color:var(--xt)}
+.output textarea{border-radius:10px;padding:12px}
+.field input::placeholder,.field textarea::placeholder{color:var(--xm);opacity:.55}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--xa);box-shadow:0 0 0 3px rgba(45,212,191,.12)}
+.field select option{background:var(--xc);color:var(--xt)}
+.field-help-trigger,.field-guide-note span{color:var(--xa)}
+.add{background:var(--xsel);border-color:#8b7cf6;color:var(--xa)}
+.style-btn{background:var(--xc);border-color:var(--xl);color:var(--xt)}
+.style-btn.active{border-color:var(--xa);background:var(--xsel);color:var(--xa)}
+.style-btn:disabled{background:var(--xs);color:var(--xm);border-color:var(--xl)}
+.guide-icon,.help-dialog-icon{background:var(--xsel);color:var(--xa)}
+.guide-toggle{background:var(--xs);border-color:var(--xl);color:var(--xa)}
+.guide-body{border-color:var(--xl)}
+.help-close{background:var(--xs);color:var(--xm)}
+.schema-preview{border-color:var(--xl)}
+#cartList>div{background:var(--xs)!important;border-color:var(--xl)!important}
+html[data-theme="dark"] .notice{background:rgba(245,158,11,.12);color:#fbbf24}
+html[data-theme="dark"] .check{background:rgba(18,183,106,.12);color:#34d399}
+html[data-theme="dark"] .validation-summary{background:rgba(240,68,56,.12);border-color:rgba(240,68,56,.4);color:#fda29b}
+html[data-theme="dark"] .field-error{color:#fda29b}
+.mode-q{margin:0 0 10px;font-weight:800;font-size:14px;color:var(--xt)}
+.mode-tabs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:22px}
+.mode-tab{position:relative;display:flex;flex-direction:column;gap:4px;padding:14px 16px;border:1.5px solid var(--xl);background:var(--xc);border-radius:14px;cursor:pointer;transition:.18s}
+.mode-tab:hover{border-color:var(--xa)}
+.mode-tab input{position:absolute;opacity:0;pointer-events:none}
+.mode-tab.on{border-color:var(--xa);background:var(--xsel);box-shadow:0 0 0 3px rgba(45,212,191,.14)}
+.mode-tab:focus-within{outline:2px solid var(--xa);outline-offset:2px}
+.mt-t{font-weight:800;font-size:15px}
+.mt-s{font-size:12px;color:var(--xm);line-height:1.4}
+h1 em,.screen h2{font-style:normal;background:linear-gradient(90deg,#8b7cf6,#5aa8e0,#2dd4bf,#8b7cf6);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:rxsh 6s linear infinite}
+.screen h2{width:fit-content;max-width:100%}
+html[data-theme="light"] h1 em,html[data-theme="light"] .screen h2{background-image:linear-gradient(90deg,#6d5ef0,#2b7fc0,#0d9488,#6d5ef0)}
+@keyframes rxsh{to{background-position:300% 0}}
+@media (prefers-reduced-motion:reduce){h1 em,.screen h2{animation:none}}
+.seo{margin-top:30px}
+.seo-card{background:var(--xc);border:1px solid var(--xl);border-radius:20px;padding:24px;margin-top:16px}
+.seo h2{margin:0 0 12px;font-size:24px;width:fit-content;max-width:100%;font-style:normal;background:linear-gradient(90deg,#8b7cf6,#5aa8e0,#2dd4bf,#8b7cf6);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:rxsh 6s linear infinite}
+html[data-theme="light"] .seo h2{background-image:linear-gradient(90deg,#6d5ef0,#2b7fc0,#0d9488,#6d5ef0)}
+.seo p,.seo li{color:var(--xm);line-height:1.65;font-size:15px}
+.seo p{margin:0 0 12px}.seo ol,.seo ul{margin:0;padding-left:22px}.seo li{margin:8px 0}
+.seo b{color:var(--xt)}
+.seo-q{border:1px solid var(--xl);border-radius:12px;margin-top:10px;background:var(--xs)}
+.seo-q summary{cursor:pointer;padding:14px;font-weight:700;color:var(--xt)}
+.seo-q p{padding:0 14px 14px;margin:0}
+.seo-note{margin-top:16px!important;font-size:13px!important}
+.selection a{color:var(--xa)}
+@media (prefers-reduced-motion:reduce){.seo h2{animation:none}}
+</style>
+</head>
+<body>
+<header class="rx-h"><div class="rx-in"><a class="rx-logo" href="/"><svg viewBox="0 0 64 64" fill="none" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="rxbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a1740"/><stop offset="1" stop-color="#0a2a33"/></linearGradient><linearGradient id="rxlg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b7cf6"/><stop offset="1" stop-color="#2dd4bf"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="18" fill="url(#rxbg)" stroke="#2c3158"/><path d="M22 47V17h11a9.5 9.5 0 0 1 0 19H22" stroke="#fff" stroke-width="6"/><path d="M34 37l11 11" stroke="url(#rxlg)" stroke-width="6"/><path d="M47 14l1.6 3.9L52.5 19.5l-3.9 1.6L47 25l-1.6-3.9L41.5 19.5l3.9-1.6z" fill="#2dd4bf"/></svg>Ruvixsa</a><div class="rx-links"><a href="/#tools">Tools</a><a href="/#about">About</a><button id="rxtg" type="button" aria-label="Switch between light and dark theme"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button></div></div></header>
+<div class="wrap">
+<header class="hero"><span class="badge">FREE PUBLIC TOOL</span><h1>Free Schema Markup <em>Generator</em></h1><p>Create clean Schema.org JSON-LD through a simple wizard. Select a platform, choose one schema, fill only the relevant fields, then generate and copy your code.</p></header>
+
+<main class="wizard">
+<div class="steps"><div class="step active" data-step="1">1. Platform</div><div class="step" data-step="2">2. Schema</div><div class="step" data-step="3">3. Form</div><div class="step" data-step="4">4. Generate</div></div>
+<div class="content">
+
+<section class="screen active" id="s1">
+<h2>Where will you use your schema?</h2><p class="sub">Choose the platform first. This does not change the Schema.org type; it helps us tailor the final instructions.</p>
+<div class="grid">
+<button class="card platform" data-v="WordPress"><span class="brand-icon wp-icon">W</span><strong>WordPress</strong><small>Sites & blogs</small></button>
+<button class="card platform" data-v="Shopify"><span class="brand-icon shopify-icon">S</span><strong>Shopify</strong><small>Online stores</small></button>
+<button class="card platform" data-v="Blogger"><span class="brand-icon blogger-icon">B</span><strong>Blogger</strong><small>Blogspot websites</small></button>
+<button class="card platform" data-v="Custom Website"><span class="brand-icon custom-icon">⌘</span><strong>Custom Website</strong><small>Any website</small></button>
+</div>
+<div class="selection">Selected platform: <b id="pv">None</b></div>
+<div class="nav"><span></span><button class="btn primary" id="n1" disabled>Next →</button></div>
+</section>
+
+<section class="screen" id="s2">
+<h2>Choose your schema type</h2><p class="sub">Choose one schema. Step 3 will show only the fields needed for that selection.</p>
+<p class="mode-q">How many schemas do you need for this page?</p>
+<div class="mode-tabs" role="radiogroup" aria-label="Schema mode">
+  <label class="mode-tab"><input type="radio" name="schemaMode" id="modeSingle" checked><span class="mt-t">Single Schema</span><span class="mt-s">One schema for one page</span></label>
+  <label class="mode-tab"><input type="radio" name="schemaMode" id="modeMultiple"><span class="mt-t">Multiple Schema</span><span class="mt-s">Combine several schemas for one page</span></label>
+</div>
+<div class="grid schema-grid">
+<button class="card schema" data-v="Article"><span class="brand-icon schema-icon">📝</span><strong>Article</strong><small>Articles & blog posts</small></button>
+<button class="card schema" data-v="Product"><span class="brand-icon schema-icon">🛒</span><strong>Product</strong><small>Products & offers</small></button>
+<button class="card schema" data-v="WebSite"><span class="brand-icon schema-icon">🌐</span><strong>WebSite</strong><small>Website information</small></button>
+<button class="card schema" data-v="WebPage"><span class="brand-icon schema-icon">📄</span><strong>WebPage</strong><small>Individual pages</small></button>
+<button class="card schema" data-v="Organization"><span class="brand-icon schema-icon">🏢</span><strong>Organization</strong><small>Companies & organizations</small></button>
+<button class="card schema" data-v="FAQPage"><span class="brand-icon schema-icon">❓</span><strong>FAQ</strong><small>Questions & answers</small></button>
+<button class="card schema" data-v="BreadcrumbList"><span class="brand-icon schema-icon">🔗</span><strong>Breadcrumb</strong><small>Page navigation</small></button>
+<button class="card schema" data-v="VideoObject"><span class="brand-icon schema-icon">🎥</span><strong>Video</strong><small>Video information</small></button>
+<button class="card schema" data-v="LocalBusiness"><span class="brand-icon schema-icon">📍</span><strong>Local Business</strong><small>Business details</small></button>
+<button class="card schema" data-v="Review"><span class="brand-icon schema-icon">⭐</span><strong>Review</strong><small>Reviews & ratings</small></button>
+<button class="card schema" data-v="Recipe"><span class="brand-icon schema-icon">🍲</span><strong>Recipe</strong><small>Recipes & cooking</small></button>
+<button class="card schema" data-v="SoftwareApplication"><span class="brand-icon schema-icon">💻</span><strong>Software App</strong><small>Apps & software</small></button>
+</div>
+<div id="schemaCart" class="panel" style="display:none;margin-top:20px">
+<h3>Multiple Schema — Added so far</h3>
+<p class="hint">Pick a type above, click Next, fill its form, then it will be added here. Repeat for every schema this page needs.</p>
+<div id="cartList" style="display:flex;flex-direction:column;gap:8px;margin:14px 0"></div>
+<div class="notice" id="cartEmptyNote">No schemas added yet.</div>
+</div>
+<div class="selection">Platform: <b id="pv2">—</b> | Mode: <b id="mv">Single</b> | Selected schema: <b id="sv">None</b></div>
+<div class="nav"><button class="btn secondary" id="b2">← Back</button><button class="btn primary" id="n2" disabled>Next →</button></div>
+<div class="nav" id="combineNav" style="display:none;justify-content:flex-end;margin-top:10px"><button class="btn primary" id="combineBtn" disabled>Combine & Generate →</button></div>
+</section>
+
+<section class="screen" id="s3">
+<h2 id="formTitle">Schema Form</h2><p class="sub" id="formSub">Fill the fields that actually apply to your selected schema. Empty optional fields will not be added to the output.</p>
+<div id="guideArea"></div>
+<div class="field-guide-note"><span>ⓘ</span><div>Need help with a field? Click the <b>ⓘ</b> icon in the top-right corner of that field.</div></div>
+<div id="validationSummary" class="validation-summary" role="alert"></div>
+<div id="formArea"></div>
+<div id="helpModal" class="help-modal" aria-hidden="true">
+  <div class="help-backdrop" id="helpBackdrop"></div>
+  <div class="help-dialog" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+    <button type="button" class="help-close" id="helpClose" aria-label="Close">×</button>
+    <div class="help-dialog-icon">ⓘ</div>
+    <h3 id="helpTitle">Field help</h3>
+    <div id="helpContent"></div>
+  </div>
+</div>
+<div class="nav"><button class="btn secondary" id="b3">← Back</button><button class="btn primary" id="n3">Generate Schema →</button></div>
+</section>
+
+<section class="screen" id="s4">
+<h2>Generated Schema</h2><p class="sub">Review the JSON-LD before copying it. The generator creates code from the information you entered; it does not guarantee a Google rich result.</p>
+<div id="faqOutputTools" class="panel" style="display:none;margin-bottom:20px">
+<h3>FAQ output modes</h3>
+<p class="hint">FAQ Schema JSON-LD and visible FAQ code are separate. Choose what you want to copy.</p>
+<div class="faq-style" id="faqModes"><button class="style-btn active" data-mode="jsonld">JSON-LD</button><button class="style-btn" data-mode="html">Visible HTML</button><button class="style-btn" data-mode="htmlcss">HTML + CSS</button><button class="style-btn" data-mode="htmlcssjs">HTML + CSS + JavaScript</button></div>
+<div id="faqStyleWrap" style="display:none;margin-top:16px"><b style="font-size:13px">Visible FAQ style</b><p class="hint" style="margin:5px 0 0">Style applies to visible FAQ outputs only.</p><div class="faq-style" id="faqStyles"><button class="style-btn active" data-style="Accordion">Accordion</button><button class="style-btn" data-style="Simple">Simple</button><button class="style-btn" data-style="Cards">Cards</button><button class="style-btn" data-style="Minimal">Minimal</button></div></div>
+</div>
+<div class="output">
+<div class="panel"><h3 id="outputTitle">JSON-LD</h3><textarea id="output" spellcheck="false"></textarea><div class="out-actions"><button class="btn primary" id="copy">Copy JSON-LD</button><button class="btn secondary" id="script">Copy Script Tag</button><button class="btn secondary" id="download">Download .jsonld</button></div><div class="check">✓ Generated locally in your browser. No API is required.</div></div>
+<div class="panel preview-panel"><div class="preview-head"><div><h3>Live Preview</h3><p class="hint">Preview appears automatically when the schema is generated.</p></div><span class="preview-badge">Responsive</span></div><div id="schemaPreview" class="schema-preview" aria-live="polite"><div class="preview-empty">Generate the schema to see its preview here.</div></div><div class="selection" style="margin-top:15px"><b>Platform:</b> <span id="outPlatform"></span><br><b>Schema:</b> <span id="outSchema"></span></div><div class="notice">Important: structured data should accurately represent the visible page content. Use only information that is actually true for the page or entity.</div><div class="selection" style="margin-top:15px"><b>Test your schema:</b> <a href="https://validator.schema.org/" target="_blank" rel="noopener">Schema Markup Validator</a> · <a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener">Google Rich Results Test</a> (for supported types).</div><div id="faqSeparateNote" class="selection" style="margin-top:15px;display:none"><b>FAQ note:</b> Visible FAQ HTML/CSS/JavaScript is separate from FAQ Schema JSON-LD. The visible questions and answers should match the content actually shown on the page. Google no longer shows FAQ rich results in Search (since 7 May 2026); FAQPage markup remains valid Schema.org.</div></div></div>
+<div class="panel" id="platformGuideBox" style="margin-top:20px">
+<h3>Where do I paste this?</h3>
+<p class="hint">Instructions below are tailored to the platform you selected in Step 1.</p>
+<div id="guideContent"></div>
+</div>
+<div class="nav"><button class="btn secondary" id="b4">← Edit Form</button><button class="btn primary" id="again">Start New Schema</button></div>
+</section>
+
+</div></main>
+<section class="seo" aria-label="About this schema markup generator">
+<div class="seo-card"><h2>What is schema markup?</h2>
+<p>Schema markup is structured data, usually written as JSON-LD, that describes what a web page is about in a format search engines can read. It uses the Schema.org vocabulary to label things such as articles, products, organizations and questions, and it does not change how your page looks.</p>
+<p>It helps search engines understand a page and can make it eligible for some rich results. It does not guarantee rankings, rich results or mentions in AI answers.</p></div>
+<div class="seo-card"><h2>How to use this schema markup generator</h2>
+<ol><li><b>Choose your platform:</b> WordPress, Shopify, Blogger or a custom website. This tailors the paste instructions.</li><li><b>Pick Single Schema or Multiple Schema,</b> then choose the schema type you need.</li><li><b>Fill in only the fields that are true for your page.</b> Empty optional fields are left out.</li><li><b>Generate, copy the JSON-LD,</b> paste it into your page, and test it with a validator.</li></ol></div>
+<div class="seo-card"><h2>Supported schema types</h2>
+<p>Article, Product, WebSite, WebPage, Organization, FAQPage, BreadcrumbList, VideoObject, LocalBusiness, Review, Recipe and SoftwareApplication.</p>
+<p><b>Single or multiple?</b> Single Schema creates one schema type for one page, such as an Article. Multiple Schema lets you add several types, such as Article, BreadcrumbList and FAQPage, and combines them into one JSON-LD block using @graph.</p></div>
+<div class="seo-card"><h2>Where do I paste the JSON-LD?</h2>
+<ul><li><b>WordPress:</b> add it to your page head with an SEO or header-and-footer plugin, or place it in the page content with a Custom HTML block.</li><li><b>Shopify:</b> open Online Store, Themes, Edit code, then paste it before the closing head tag in theme.liquid.</li><li><b>Blogger:</b> go to Theme, Edit HTML, and paste it before the closing head tag.</li><li><b>Custom website:</b> paste it inside a script tag of type application/ld+json in your page head.</li></ul></div>
+<div class="seo-card"><h2>Frequently asked questions</h2><details class="seo-q"><summary>Is this schema markup generator free?</summary><p>Yes. The tool is free to use, and the code is generated in your browser from the details you enter.</p></details><details class="seo-q"><summary>What is JSON-LD?</summary><p>JSON-LD is a way of writing structured data as a small block of code. It is the format Google recommends for structured data, and you paste it into your page without changing what visitors see.</p></details><details class="seo-q"><summary>Does schema markup improve rankings?</summary><p>Schema markup is not a ranking guarantee. It helps search engines understand your content and can make a page eligible for some rich results when the markup matches the visible page.</p></details><details class="seo-q"><summary>Does FAQ schema still show rich results in Google?</summary><p>No. Google stopped showing FAQ rich results in Search on 7 May 2026. FAQPage is still a valid Schema.org type and the markup can stay on a page, but you should not expect FAQ dropdowns in search results.</p></details><details class="seo-q"><summary>Does schema help my site appear in AI answers?</summary><p>Google says no special markup is required for its AI features, and no search engine promises citations for adding schema. Clear, accurate, visible content matters most. Schema can still describe what a page is and who published it.</p></details><details class="seo-q"><summary>Which schema type should I use?</summary><p>Use Article for blog posts, Product for items you sell, Organization for your brand, and BreadcrumbList for a visible navigation trail. Only add a type when it matches content that is actually on the page.</p></details><details class="seo-q"><summary>How do I test my schema?</summary><p>Paste your code into the Schema Markup Validator at validator.schema.org. For types that Google supports, you can also use Google&#x27;s Rich Results Test. Test your schema before publishing it.</p></details>
+<p class="seo-note">This tool creates code from the information you enter. It does not check that your information is accurate, and it does not guarantee any search result.</p></div>
+</section>
+</div>
+<footer class="rx-f"><div class="rx-in2"><div class="rx-fg"><div class="rx-fb"><strong>Ruvixsa</strong><p>Free web tools for smarter optimization.</p></div><div class="rx-fc"><p class="rx-fh">Tools</p><a href="/schema-generator/">Schema Generator</a><a href="/qr-code-generator/">QR Code Generator</a><a href="/#tools">Crawl &amp; Index Control</a><a href="/meta-tag-generator/">SEO Meta Tag Generator</a><a href="/#tools">Image Compressor</a><a href="/#tools">Password Generator</a></div><div class="rx-fc"><p class="rx-fh">Explore</p><a href="https://digitalearnhubfast.blogspot.com" target="_blank" rel="noopener">Blog</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></div><div class="rx-fc"><p class="rx-fh">Legal</p><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/disclaimer.html">Disclaimer</a></div></div><div class="rx-fl">© 2026 Ruvixsa. Free web tools.</div></div></footer>
+
+<script>
+const state={platform:null,schema:null,data:{}};
+let schemaMode='single', multiList=[];
+const screens=document.querySelectorAll('.screen'), steps=document.querySelectorAll('.step');
+function show(n){screens.forEach((x,i)=>x.classList.toggle('active',i===n-1));steps.forEach(x=>x.classList.toggle('active',+x.dataset.step<=n));window.scrollTo({top:0,behavior:'smooth'});}
+const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
+
+$$('.platform').forEach(b=>b.onclick=()=>{$$('.platform').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');state.platform=b.dataset.v;$('#pv').textContent=state.platform;$('#n1').disabled=false;});
+$('#n1').onclick=()=>{$('#pv2').textContent=state.platform;show(2);};
+$$('.schema').forEach(b=>b.onclick=()=>{$$('.schema').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');state.schema=b.dataset.v;$('#sv').textContent=state.schema;$('#n2').disabled=false;});
+$('#n2').onclick=()=>{buildForm(state.schema);$('#n3').textContent=schemaMode==='multiple'?'Add to List →':'Generate Schema →';show(3);};
+$('#b2').onclick=()=>show(1);$('#b3').onclick=()=>show(2);$('#b4').onclick=()=>{if(state.schema==='Multiple'){state.schema=null;$$('.schema').forEach(x=>x.classList.remove('selected'));$('#sv').textContent='None';$('#n2').disabled=true;show(2);}else show(3);};
+
+function updateCartUI(){
+ const list=$('#cartList'), empty=$('#cartEmptyNote'), combineBtn=$('#combineBtn');
+ if(!list)return;
+ list.innerHTML=multiList.map((item,i)=>`<div style="display:flex;align-items:center;justify-content:space-between;background:#f8fafc;border:1px solid #e4e7ec;border-radius:10px;padding:10px 14px"><span><b>${i+1}.</b> ${item.type}</span><button type="button" class="mini remove" data-i="${i}">Remove</button></div>`).join('');
+ empty.style.display=multiList.length?'none':'block';
+ combineBtn.disabled=multiList.length===0;
+ list.querySelectorAll('.remove').forEach(b=>b.onclick=()=>{multiList.splice(+b.dataset.i,1);updateCartUI();});
+}
+document.querySelectorAll('input[name="schemaMode"]').forEach(r=>r.onchange=()=>{
+ schemaMode=$('#modeMultiple').checked?'multiple':'single';
+ $('#schemaCart').style.display=schemaMode==='multiple'?'block':'none';
+ $('#combineNav').style.display=schemaMode==='multiple'?'flex':'none';
+ updateCartUI();
+});
+$('#combineBtn').onclick=()=>{
+ if(!multiList.length)return;
+ const combined={'@context':'https://schema.org','@graph':multiList.map(x=>x.json)};
+ $('#output').value=JSON.stringify(combined,null,2);
+ state.schema='Multiple';$('#b4').textContent='← Back to Schemas';
+ $('#outPlatform').textContent=state.platform;
+ $('#outSchema').textContent='Multiple ('+multiList.map(x=>x.type).join(', ')+')';
+ document.getElementById('faqOutputTools').style.display='none';
+ document.getElementById('faqSeparateNote').style.display='none';
+ document.getElementById('outputTitle').textContent='Combined JSON-LD (@graph)';
+ document.getElementById('copy').textContent='Copy JSON-LD';
+ document.getElementById('script').style.display='inline-block';
+ document.getElementById('download').style.display='inline-block';
+ document.getElementById('download').textContent='Download .jsonld';
+ renderMultiPreview(multiList);
+ renderPlatformGuide();
+ show(4);
+};
+
+const fieldHelp={
+headline:["What is it?","The main title of your article.","Where do I get it?","Copy the visible article/post title from the published page.","Tip","Use the real title shown on the page."],
+description:["What is it?","A short, accurate summary of the page.","Where do I get it?","Write or copy a genuine summary that matches the visible content.","Tip","Keep it accurate; do not stuff keywords."],
+url:["What is it?","The exact public URL of the page.","Where do I get it?","Open the published page and copy the browser URL.","Tip","Use the actual article/page URL, not automatically the homepage."],
+image:["What is it?","The main image URL.","Where do I get it?","Copy the direct URL of the real article, product or page image.","Tip","Use an image that actually belongs to the page."],
+author:["What is it?","The real person responsible for the content.","Where do I get it?","Use the author shown on the page.","Tip","Do not invent an author name."],
+authorUrl:["What is it?","The author's public profile URL.","Where do I get it?","Copy the real author/profile page URL.","Tip","Leave it blank if no real profile URL exists."],
+publisher:["What is it?","The site, company or organization publishing the content.","Where do I get it?","Use the actual publisher or brand name.","Tip","For a personal blog, use the genuine publisher identity."],
+publisherLogo:["What is it?","The publisher's real logo URL.","Where do I get it?","Use the direct URL of the site/brand logo.","Tip","Do not use the article's featured image as the publisher logo."],
+datePublished:["What is it?","The original publication date.","Where do I get it?","Use the actual date the content was published.","Tip","Leave blank if the real date is unknown."],
+dateModified:["What is it?","The latest meaningful update date.","Where do I get it?","Use the real last-modified date when known.","Tip","Do not invent an update date."],
+
+name:["What is it?","The name or title of the entity.","Where do I get it?","Copy the real name shown on the page.","Tip","Use the same identity users see."],
+brand:["What is it?","The product's actual brand.","Where do I get it?","Copy the brand shown in the product information.","Tip","Leave blank when there is no genuine brand."],
+sku:["What is it?","The seller or manufacturer SKU.","Where do I get it?","Copy the real SKU from product data.","Tip","Do not make up a SKU."],
+gtin:["What is it?","A valid global trade item number.","Where do I get it?","Use the real GTIN from the product or manufacturer data.","Tip","Only enter a genuine GTIN."],
+price:["What is it?","The actual price shown for the offer or application.","Where do I get it?","Copy the price currently shown on the page.","Tip","Match the price and currency to the real offer. Leave it blank if nothing is sold."],
+currency:["What is it?","The currency used for the price.","Where do I get it?","Use the actual currency code for the offer.","Tip","Use a valid ISO 4217 code such as USD, EUR or PKR."],
+availability:["What is it?","The product's actual availability status.","Where do I get it?","Use the real status shown for the product.","Tip","Use a valid Schema.org availability value."],
+offerUrl:["What is it?","The URL where the offer can actually be purchased.","Where do I get it?","Copy the real product/checkout offer URL.","Tip","Do not enter a URL that does not lead to the offer."],
+ratingValue:["What is it?","The genuine aggregate rating value.","Where do I get it?","Use real rating data displayed and supported by the page.","Tip","Never invent ratings."],
+reviewCount:["What is it?","The number of reviews behind the aggregate rating.","Where do I get it?","Use the real review count.","Tip","The count should match the genuine rating data."],
+
+alternateName:["What is it?","A genuine alternative name for the website.","Where do I get it?","Use a real alternate site or brand name.","Tip","Leave blank if there is no established alternate name."],
+searchUrl:["What is it?","A real site-search URL pattern.","Where do I get it?","Use your website's actual search URL pattern.","Tip","Only use a search pattern that works on your site."],
+
+logo:["What is it?","The organization's real logo URL.","Where do I get it?","Copy the direct URL of the official logo.","Tip","Use the organization's actual logo."],
+email:["What is it?","A genuine public organization email.","Where do I get it?","Copy the public contact email from the official site.","Tip","Do not use a made-up address."],
+phone:["What is it?","A genuine public organization phone number.","Where do I get it?","Copy the public contact number from the official site.","Tip","Use the number users can actually contact."],
+sameAs:["What is it?","Official profile URLs representing the same organization.","Where do I get them?","Copy the organization's genuine public profile/social links.","Tip","Only add profiles that really belong to the organization."],
+
+q:["What is it?","A question visibly answered on the page.","Where do I get it?","Copy the question from the visible FAQ section.","Tip","The question should actually appear on the page."],
+a:["What is it?","The answer to that visible question.","Where do I get it?","Copy the actual answer shown on the page.","Tip","The answer should genuinely answer the question."],
+
+bcName:["What is it?","The visible breadcrumb label.","Where do I get it?","Copy the breadcrumb text users can see.","Tip","Keep the same order as the visible breadcrumb trail."],
+bcUrl:["What is it?","The URL linked by that breadcrumb.","Where do I get it?","Copy the actual breadcrumb link.","Tip","Do not create links that visitors cannot use."],
+
+thumbnailUrl:["What is it?","The video's thumbnail image URL.","Where do I get it?","Use the real thumbnail URL for the video.","Tip","The thumbnail should represent the actual video."],
+uploadDate:["What is it?","The video's actual upload/publication date.","Where do I get it?","Use the real date from the video or platform.","Tip","Do not invent a date."],
+contentUrl:["What is it?","A direct video file URL.","Where do I get it?","Use it only when a real direct video file URL exists.","Tip","Leave blank when you only have an embed/page URL."],
+embedUrl:["What is it?","The URL used to embed the video.","Where do I get it?","Copy the real embed URL from the video provider.","Tip","Use the actual embed URL, not a random page URL."],
+
+telephone:["What is it?","The business's genuine phone number.","Where do I get it?","Copy the public number from the official business information.","Tip","Use a number customers can actually contact."],
+street:["What is it?","The real street address.","Where do I get it?","Copy the business's official/public address.","Tip","Do not invent an address."],
+city:["What is it?","The locality or city of the business.","Where do I get it?","Use the real business address.","Tip","Match the address shown to customers."],
+region:["What is it?","The state, province or region.","Where do I get it?","Use the real business address.","Tip","Use the region actually belonging to the address."],
+postal:["What is it?","The postal or ZIP code.","Where do I get it?","Use the real business address.","Tip","Enter the genuine postal code."],
+country:["What is it?","The country in the business address.","Where do I get it?","Use the real business address.","Tip","Use the actual country."],
+
+reviewBody:["What is it?","The genuine review text.","Where do I get it?","Use the review that is actually present on the page.","Tip","Do not create or rewrite a review as if it were genuine."],
+itemName:["What is it?","The product, service or entity being reviewed.","Where do I get it?","Copy the real reviewed item name.","Tip","Make sure the reviewed item matches the page."],
+bestRating:["What is it?","The highest value allowed by the real rating scale.","Where do I get it?","Check the rating scale used by the review.","Tip","Use the actual maximum of that scale."],
+worstRating:["What is it?","The lowest value allowed by the real rating scale.","Where do I get it?","Check the rating scale used by the review.","Tip","Use the actual minimum of that scale."],
+
+prepTime:["What is it?","The recipe preparation duration.","Where do I get it?","Use the real prep time and enter it in ISO 8601 duration format.","Tip","Example format: PT15M."],
+cookTime:["What is it?","The recipe cooking duration.","Where do I get it?","Use the real cooking time in ISO 8601 duration format.","Tip","Example format: PT30M."],
+totalTime:["What is it?","The total recipe preparation and cooking time.","Where do I get it?","Use the actual total time.","Tip","Make sure it reflects the real recipe."],
+recipeIngredient:["What is it?","The list of real ingredients used in this recipe.","Where do I get it?","Copy them exactly as shown on the page, one per line.","Tip","One ingredient per line, e.g. 2 cups flour."],
+recipeYield:["What is it?","The amount the recipe produces.","Where do I get it?","Copy the stated serving/yield information.","Tip","Use the real yield shown in the recipe."],
+recipeCategory:["What is it?","The category that describes the recipe.","Where do I get it?","Use the genuine category for the recipe.","Tip","Keep it relevant to the actual recipe."],
+recipeCuisine:["What is it?","The cuisine associated with the recipe.","Where do I get it?","Use the cuisine actually represented by the recipe.","Tip","Do not choose a cuisine only for SEO."],
+
+operatingSystem:["What is it?","The platform or operating system the software supports.","Where do I get it?","Use the actual supported platform(s).","Tip","Only list systems the software really supports."],
+applicationCategory:["What is it?","The category that describes the software.","Where do I get it?","Choose the category that genuinely fits the application.","Tip","Do not select an unrelated category."],
+};
+
+
+function field(id,label,type='text',placeholder='',full=false,extra='',options=null){
+ const help=fieldHelp[id]||"Enter real information that accurately describes this page or entity. Leave it blank if the information is not available.";
+ let control;
+ if(type==='select'&&options){
+   control=`<select id="${id}">`+options.map(o=>`<option value="${o.v}">${o.l}</option>`).join('')+`</select>`;
+ }else if(type==='textarea'){
+   control=`<textarea id="${id}" placeholder="${placeholder}"></textarea>`;
+ }else{
+   control=`<input id="${id}" type="${type}" placeholder="${placeholder}">`;
+ }
+ return `<div class="field ${full?'full':''}">
+   <button type="button" class="field-help-trigger" data-help="${id}" aria-label="${label} — What is it?">ⓘ</button>
+   <label for="${id}">${label} <span class="optional">${extra||'(optional)'}</span></label>
+   ${control}
+ </div>`;
+}
+function panel(title,hint,fields){return `<div class="form-layout"><div class="panel"><h3>${title}</h3><p class="hint">${hint}</p><div class="fields">${fields}</div></div><div class="panel"><h3>How this works</h3><p class="hint">Only the fields you fill will be included. Required/important fields can be marked more strictly in a later validation layer.</p><div class="selection"><b>Selected:</b> ${state.schema}</div><div class="notice">Use real information from the page. Do not add fake ratings, prices, authors or business details just to complete a schema.</div></div></div>`;}
+const guideText={
+ WordPress:{head:"Go to Appearance \u2192 Theme File Editor \u2192 header.php, and paste this just before &lt;/head&gt;. Easier alternative: use a plugin like Insert Headers and Footers, or the custom code/schema box in RankMath or Yoast SEO \u2014 no theme editing needed.",body:"Paste this directly inside the page or post content, at the exact spot where you want it to appear (use the Custom HTML block in the block editor, or a Text/HTML widget).",mobile:"On a phone, theme files are hard to edit well. Easier: use the RankMath/Yoast plugin's custom-code field, or switch your mobile browser to \u201cDesktop site\u201d mode first."},
+ Shopify:{head:"Go to Online Store \u2192 Themes \u2192 Edit code \u2192 open theme.liquid, and paste this just before &lt;/head&gt;.",body:"Paste this inside the relevant template file (e.g. product or page template), at the spot where you want it to appear on the page.",mobile:"Turn on \u201cDesktop site\u201d in your browser menu first, then use Find (Ctrl+F) to locate &lt;/head&gt; precisely \u2014 small screens make it easy to paste in the wrong spot."},
+ Blogger:{head:"Go to Theme \u2192 Edit HTML, and paste this just before &lt;/head&gt;.",body:"Switch the post editor to HTML view, and paste this at the spot in the post where you want it to appear.",mobile:"Use your browser menu's \u201cFind in page\u201d to search for &lt;/head&gt; if the editor doesn't jump to it on its own."},
+ 'Custom Website':{head:"Paste this just before the closing &lt;/head&gt; tag in your HTML file, or in your CMS's custom header/code injection section.",body:"Paste this directly in the page body, at the spot where you want it to appear.",mobile:"Editing raw HTML files is easiest from a computer. If you must use a phone, use a proper code/text editor app \u2014 not Word or Notes, which can change the formatting."}
+};
+function renderPlatformGuide(){
+ const box=document.getElementById('guideContent'); if(!box)return;
+ const visible=(state.schema==='FAQPage' && typeof faqOutputMode!=='undefined' && faqOutputMode!=='jsonld');
+ const loc=visible?'body':'head';
+ const g=guideText[state.platform]||guideText['Custom Website'];
+ const typeNote=visible?"This is visible content \u2014 it will show up on the page for real visitors, so place it exactly where the FAQ should be seen.":`This ${state.schema==='Multiple'?'combined code':(state.schema||'schema')+' schema'} is invisible structured data \u2014 it works quietly in the background for Google and AI bots, and won't change how your page looks.`;
+ box.innerHTML=`<div class="pv-note" style="margin-bottom:10px">${typeNote}</div><div class="pv-note" style="margin-bottom:10px"><b>${state.platform||''}:</b> ${g[loc]}</div><div class="pv-note" style="margin-bottom:0"><b>On mobile:</b> ${g.mobile}</div>`;
+}
+
+
+const guides={
+Article:["📝","Article Schema Guide","Article/BlogPosting schema describes an article or blog post.","Use it for real article or blog content.","Headline, description, URL, main image, author and dates are commonly useful.","Use the article URL and direct URL of its main image. In Blogger, open the image and copy its direct URL.","Publisher logo means your site/brand logo, not the article's featured image."],
+Product:["🛒","Product Schema Guide","Product schema describes a specific product and its information.","Use it on a real product page.","Name, description, URL and image; add real offer details such as price, currency and availability when applicable.","Copy the product page URL and direct product-image URL from the actual page.","Do not invent price, ratings, reviews, SKU or availability."],
+WebSite:["🌐","WebSite Schema Guide","WebSite schema describes the website itself.","Use it for your overall website.","Website name and homepage URL are the main starting fields.","Use your real homepage URL and visible website name.","Site search should point to a real search pattern."],
+WebPage:["📄","WebPage Schema Guide","WebPage schema describes one specific page.","Use it for an individual webpage.","Page name/title and URL; description, image and dates can be added when real.","Copy the exact page URL and visible page information.","Use the individual page URL, not automatically the homepage."],
+Organization:["🏢","Organization Schema Guide","Organization schema describes a real company, brand or organization.","Use it for an identifiable organization.","Name and website URL; logo, description, contact and social URLs when real.","Use official website, logo and official profile URLs.","Only add genuine organization information."],
+FAQPage:["❓","FAQ Schema Guide","FAQPage schema describes questions and answers actually present on a page.","Use it when the FAQ content is visible on the page.","Each real question and its corresponding answer.","Copy questions and answers from the visible FAQ section.","Google stopped showing FAQ rich results on 7 May 2026, but FAQPage is still valid Schema.org. Use it only for questions visible on the page."],
+BreadcrumbList:["🔗","Breadcrumb Schema Guide","Breadcrumb schema describes a visible navigation path.","Use it when the page has a real breadcrumb trail.","Each visible breadcrumb name and URL, in order.","Copy the labels and links from the actual navigation.","Do not create breadcrumb items visitors cannot see."],
+VideoObject:["🎥","Video Schema Guide","VideoObject schema describes a real video.","Use it for video actually present or embedded on the page.","Name, description, thumbnail and upload date; content/embed URLs when available.","Use the video's real thumbnail and page/video URLs.","Only use URLs that actually point to the video."],
+LocalBusiness:["📍","Local Business Schema Guide","LocalBusiness schema describes a real local business.","Use it for an actual local business.","Name and real contact/location information.","Copy details from the official site or genuine business information.","Never invent address or contact details."],
+Review:["⭐","Review Schema Guide","Review schema describes a genuine review.","Use it when the review is genuinely present on the page.","Review text, reviewer, reviewed item and rating when actually available.","Copy the information from the real review.","Do not create fake reviews or ratings."],
+Recipe:["🍲","Recipe Schema Guide","Recipe schema describes a real recipe.","Use it for an actual recipe page.","Name plus genuine recipe details such as image, author, times and yield.","Copy information from the visible recipe content.","Only include details actually stated."],
+SoftwareApplication:["💻","Software Application Schema Guide","SoftwareApplication schema describes a real software application.","Use it for an actual app or software product.","Name, description, URL, operating system/category and real pricing when applicable.","Use the official app/software page and actual pricing.","Do not add pricing or systems that do not apply."]
+};
+function renderGuide(type){
+ const g=guides[type]; if(!g){$('#guideArea').innerHTML='';return;}
+ $('#guideArea').innerHTML=`<div class="guide"><div class="guide-head" id="guideHead"><div class="guide-title"><span class="guide-icon">${g[0]}</span><div><strong>${g[1]}</strong><small>${g[2]}</small></div></div><button class="guide-toggle" id="guideToggle" type="button" aria-expanded="false">Show guide</button></div><div class="guide-body hidden" id="guideBody"><div class="guide-grid"><div class="guide-box"><b>What is it?</b><p>${g[3]}</p></div><div class="guide-box"><b>What do I need?</b><p>${g[4]}</p></div><div class="guide-box"><b>Where do I get it?</b><p>${g[5]}</p></div></div><div class="guide-tip"><b>Tip:</b> ${g[6]}</div></div></div>`;
+ const body=$('#guideBody'),toggle=$('#guideToggle');
+ function setGuide(open){body.classList.toggle('hidden',!open);toggle.textContent=open?'Hide guide':'Show guide';toggle.setAttribute('aria-expanded',String(open));}
+ toggle.onclick=e=>{e.stopPropagation();setGuide(body.classList.contains('hidden'));};
+ $('#guideHead').onclick=e=>{if(e.target!==toggle && !toggle.contains(e.target)) setGuide(body.classList.contains('hidden'));};
+}
+
+function openFieldHelp(id,label){
+ const h=fieldHelp[id]||fieldHelp[id.replace(/\d+$/,'')];
+ if(!h)return;
+ $('#helpTitle').textContent=label+' — Field Help';
+ $('#helpContent').innerHTML=`<div class="help-section"><b>${h[0]}</b><p>${h[1]}</p></div>
+ <div class="help-section"><b>${h[2]}</b><p>${h[3]}</p></div>
+ <div class="help-section"><b>${h[4]}</b><p>${h[5]}</p></div>`;
+ $('#helpModal').classList.add('open');
+ $('#helpModal').setAttribute('aria-hidden','false');
+}
+function closeFieldHelp(){
+ $('#helpModal').classList.remove('open');
+ $('#helpModal').setAttribute('aria-hidden','true');
+}
+document.addEventListener('click',e=>{
+ const btn=e.target.closest('.field-help-trigger');
+ if(btn){
+   const id=btn.dataset.help;
+   const lab=btn.parentElement.querySelector('label');let label=id;if(lab){const c=lab.cloneNode(true);c.querySelectorAll('.optional').forEach(x=>x.remove());label=c.textContent.trim()||id;}
+   openFieldHelp(id,label);
+ }
+});
+$('#helpClose').onclick=closeFieldHelp;
+$('#helpBackdrop').onclick=closeFieldHelp;
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeFieldHelp();});
+
+
+function buildForm(type){
+ $('#formTitle').textContent=type+' Schema Form'; renderGuide(type);
+ let f='';
+ if(type==='Article') f=panel('Article details','Useful for article/blog content.',field('headline','Headline','text','Your article title',true,'(recommended)')+field('description','Description','textarea','Short accurate description',true)+field('url','Article URL','url','https://example.com/article',true,'(recommended)')+field('image','Image URL','url','https://example.com/image.jpg')+field('author','Author name','text','Author name',false,'(recommended)')+field('authorUrl','Author URL','url','https://example.com/author')+field('publisher','Publisher name','text','Site or organization name')+field('publisherLogo','Publisher logo URL','url','https://example.com/logo.png')+field('datePublished','Date published','datetime-local','')+field('dateModified','Date modified','datetime-local',''));
+ else if(type==='Product') f=panel('Product details','Create a product entity with optional offer and rating information.',field('name','Product name','text','Product name',true,'(recommended)')+field('description','Description','textarea','Product description',true)+field('url','Product URL','url','https://example.com/product',true)+field('image','Image URL','url','https://example.com/product.jpg')+field('brand','Brand','text','Brand name')+field('sku','SKU','text','SKU')+field('gtin','GTIN','text','GTIN-13 / GTIN-14 etc.')+field('price','Price','number','99.99')+field('currency','Currency','text','USD')+field('availability','Availability','select','',false,'(optional)',[{v:'',l:'Select availability'},{v:'https://schema.org/InStock',l:'In Stock'},{v:'https://schema.org/OutOfStock',l:'Out of Stock'},{v:'https://schema.org/PreOrder',l:'Pre-order'},{v:'https://schema.org/LimitedAvailability',l:'Limited Availability'},{v:'https://schema.org/Discontinued',l:'Discontinued'},{v:'https://schema.org/SoldOut',l:'Sold Out'}])+field('offerUrl','Offer URL','url','https://example.com/buy')+field('ratingValue','Rating value','number','4.5')+field('reviewCount','Review count','number','120'));
+ else if(type==='WebSite') f=panel('Website details','Describe the website itself.',field('name','Website name','text','Your website name',true)+field('url','Website URL','url','https://example.com',true)+field('alternateName','Alternate name','text','Short alternative name')+field('description','Description','textarea','What the website is about')+field('searchUrl','Site search URL template','url','https://example.com/search?q={search_term_string}'));
+ else if(type==='WebPage') f=panel('WebPage details','Describe one specific page.',field('name','Page name','text','Page title',true)+field('url','Page URL','url','https://example.com/page',true)+field('description','Description','textarea','Page description')+field('image','Image URL','url','https://example.com/image.jpg')+field('datePublished','Date published','datetime-local','')+field('dateModified','Date modified','datetime-local',''));
+ else if(type==='Organization') f=panel('Organization details','Use real organization information.',field('name','Organization name','text','Company or organization',true)+field('url','Website URL','url','https://example.com',true)+field('logo','Logo URL','url','https://example.com/logo.png')+field('description','Description','textarea','Organization description')+field('email','Email','email','hello@example.com')+field('phone','Phone','tel','+1 555 000 0000')+field('sameAs','Social/profile URL(s)','textarea','One URL per line',true));
+ else if(type==='FAQPage') f=faqForm();
+ else if(type==='BreadcrumbList') f=breadcrumbForm();
+ else if(type==='VideoObject') f=panel('Video details','Describe the video shown on the page.',field('name','Video name','text','Video title',true)+field('description','Description','textarea','Video description',true)+field('thumbnailUrl','Thumbnail URL','url','https://example.com/thumb.jpg')+field('uploadDate','Upload date','datetime-local','')+field('contentUrl','Video URL','url','https://example.com/video.mp4')+field('embedUrl','Embed URL','url','https://example.com/embed'));
+ else if(type==='LocalBusiness') f=panel('Local business details','Add only genuine business information.',field('name','Business name','text','Business name',true)+field('url','Website URL','url','https://example.com')+field('image','Image URL','url','https://example.com/photo.jpg')+field('telephone','Phone','tel','+1 555 000 0000')+field('street','Street address','text','Street address')+field('city','City','text','City')+field('region','State/Province','text','State')+field('postal','Postal code','text','Postal code')+field('country','Country','text','Country'));
+ else if(type==='Review') f=panel('Review details','Use review information that actually exists on the page.',field('reviewBody','Review text','textarea','Review content',true)+field('author','Reviewer name','text','Reviewer',true)+field('itemName','Reviewed item','text','Product/service name',true)+field('ratingValue','Rating value','number','5')+field('bestRating','Best rating','number','5')+field('worstRating','Worst rating','number','1')+field('datePublished','Review date','date',''));
+ else if(type==='Recipe') f=panel('Recipe details','Basic recipe schema fields for this first dynamic-form version.',field('name','Recipe name','text','Recipe title',true)+field('description','Description','textarea','Recipe description')+field('image','Image URL','url','https://example.com/recipe.jpg')+field('author','Author','text','Author name')+field('recipeIngredient','Ingredients','textarea','2 cups flour\n1 tsp salt\n1 egg',true)+field('prepTime','Prep time','text','PT15M')+field('cookTime','Cook time','text','PT30M')+field('totalTime','Total time','text','PT45M')+field('recipeYield','Yield','text','4 servings')+field('recipeCategory','Category','text','Dinner')+field('recipeCuisine','Cuisine','text','Pakistani'));
+ else if(type==='SoftwareApplication') f=panel('Software application details','Describe an actual software application.',field('name','Application name','text','App name',true)+field('description','Description','textarea','Application description',true)+field('url','Application URL','url','https://example.com/app')+field('operatingSystem','Operating system','text','Windows, Android, Web')+field('applicationCategory','Application category','text','BusinessApplication')+field('price','Price','number','0')+field('currency','Currency','text','USD'));
+ $('#formArea').innerHTML=f;
+ if(type==='FAQPage') initFAQ();
+ if(type==='BreadcrumbList') initBreadcrumb();
+}
+function faqForm(){return `<div class="form-layout"><div class="panel"><h3>FAQ questions & answers</h3><p class="hint">Add only questions and answers that are visibly present on the page.</p><div id="faqRows"></div><button class="add" id="addFaq">+ Add Question</button><div style="margin-top:18px"><b>Output options</b><p class="hint">After validation, you can generate FAQ JSON-LD or separate visible FAQ HTML, with optional CSS and JavaScript.</p></div></div><div class="panel"><h3>FAQ mode</h3><p class="hint">Schema and visible FAQ code remain separate outputs.</p><div class="selection"><b>Schema:</b> FAQPage</div><div class="notice">The generator will not claim that FAQ structured data guarantees a Google rich result.</div></div></div>`}
+function breadcrumbForm(){return `<div class="panel"><h3>Breadcrumb items</h3><p class="hint">Add the visible breadcrumb path in order.</p><div id="bcRows"></div><button class="add" id="addBc">+ Add Breadcrumb Item</button></div>`}
+function initFAQ(){let rows=$('#faqRows'); addFaqRow(); $('#addFaq').onclick=addFaqRow; function addFaqRow(){let n=rows.children.length+1;let d=document.createElement('div');d.className='repeat-row';d.innerHTML=`<div class="repeat-head"><strong>Question ${n}</strong><button class="mini remove">Remove</button></div><div class="fields">${field('q'+n,'Question','text','Question',true)+field('a'+n,'Answer','textarea','Answer',true)}</div>`;rows.appendChild(d);d.querySelector('.remove').onclick=()=>{d.remove();[...rows.children].forEach((r,i)=>r.querySelector('strong').textContent='Question '+(i+1));};}}
+function initBreadcrumb(){let rows=$('#bcRows'); add();$('#addBc').onclick=add;function add(){let n=rows.children.length+1;let d=document.createElement('div');d.className='repeat-row';d.innerHTML=`<div class="repeat-head"><strong>Item ${n}</strong><button class="mini remove">Remove</button></div><div class="fields">${field('bcName'+n,'Name','text','Home',true)+field('bcUrl'+n,'URL','url','https://example.com/',true)}</div>`;rows.appendChild(d);d.querySelector('.remove').onclick=()=>{d.remove();[...rows.children].forEach((r,i)=>r.querySelector('strong').textContent='Item '+(i+1));};}}
+
+function val(id){let e=document.getElementById(id);return e?e.value.trim():''}
+function clean(o){Object.keys(o).forEach(k=>{if(o[k]===''||o[k]===undefined||o[k]===null)delete o[k]});return o}
+function dt(id){let x=val(id);return x?new Date(x).toISOString():''}
+function clearFieldState(id){
+ const e=document.getElementById(id); if(!e) return;
+ const wrap=e.closest('.field'); if(wrap) wrap.classList.remove('invalid','valid');
+ const err=wrap&&wrap.querySelector('.field-error'); if(err) err.textContent='';
+}
+function setFieldError(id,msg){
+ const e=document.getElementById(id); if(!e) return;
+ const wrap=e.closest('.field'); if(!wrap) return;
+ wrap.classList.add('invalid'); wrap.classList.remove('valid');
+ let err=wrap.querySelector('.field-error');
+ if(!err){err=document.createElement('div');err.className='field-error';wrap.appendChild(err)}
+ err.textContent=msg;
+}
+function setFieldValid(id){
+ const e=document.getElementById(id); if(!e) return;
+ const wrap=e.closest('.field'); if(wrap&&!wrap.classList.contains('invalid')) wrap.classList.add('valid');
+}
+function clearValidation(){
+ document.querySelectorAll('#formArea .field').forEach(x=>x.classList.remove('invalid','valid'));
+ document.querySelectorAll('#formArea .field-error').forEach(x=>x.remove());
+ const box=document.getElementById('validationSummary');
+ if(box){box.classList.remove('show');box.innerHTML='';}
+}
+function isHttpUrl(x){try{const u=new URL(x);return u.protocol==='http:'||u.protocol==='https:'}catch{return false}}
+function isEmail(x){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(x)}
+function isIsoDate(x){return !Number.isNaN(Date.parse(x))}
+const ISO_CURRENCIES=new Set(('AED AFN ALL AMD ANG AOA ARS AUD AWG AZN BAM BBD BDT BGN BHD BIF BMD BND BOB BOV BRL BSD BTN BWP BYN BZD CAD CDF CHE CHF CHW CLF CLP CNY COP COU CRC CUC CUP CVE CZK DJF DKK DOP DZD EGP ERN ETB EUR FJD FKP GBP GEL GHS GIP GMD GNF GTQ GYD HKD HNL HTG HUF IDR ILS INR IQD IRR ISK JMD JOD JPY KES KGS KHR KMF KPW KRW KWD KYD KZT LAK LBP LKR LRD LSL LYD MAD MDL MGA MKD MMK MNT MOP MRU MUR MVR MWK MXN MXV MYR MZN NAD NGN NIO NOK NPR NZD OMR PAB PEN PGK PHP PKR PLN PYG QAR RON RSD RUB RWF SAR SBD SCR SDG SEK SGD SHP SLE SLL SOS SRD SSP STN SVC SYP SZL THB TJS TMT TND TOP TRY TTD TWD TZS UAH UGX USD USN UYI UYU UYW UZS VED VES VND VUV WST XAF XAG XAU XBA XBB XBC XBD XCD XDR XOF XPD XPF XPT XSU XTS XUA XXX YER ZAR ZMW ZWL').split(/\s+/));
+function isCurrency(x){return ISO_CURRENCIES.has(String(x).trim().toUpperCase())}
+function isNonNegativeNumber(x){return x!==''&&Number.isFinite(Number(x))&&Number(x)>=0}
+function isPositiveInteger(x){return /^\d+$/.test(x)&&Number(x)>=0}
+function isDuration(x){return /^P(?=\d|T\d)(?:\d+Y)?(?:\d+M)?(?:\d+D)?(?:T(?:\d+H)?(?:\d+M)?(?:\d+S)?)?$/.test(x)}
+function isGtin(x){const v=String(x).replace(/[\s-]/g,'');return /^(?:\d{8}|\d{12}|\d{13}|\d{14})$/.test(v)}
+function addError(errors,id,msg){setFieldError(id,msg);errors.push(msg)}
+function requireValue(errors,id,label){if(!val(id)){addError(errors,id,label+' is required.');return false}return true}
+function validUrlIfFilled(errors,id,label){if(val(id)&&!isHttpUrl(val(id)))addError(errors,id,label+' must be a valid http/https URL.')}
+function validateForm(type){
+ clearValidation(); const errors=[];
+ if(type==='Article'){
+  requireValue(errors,'headline','Headline'); requireValue(errors,'url','Article URL'); validUrlIfFilled(errors,'url','Article URL');
+  validUrlIfFilled(errors,'image','Image URL'); if(val('authorUrl')&&!val('author')) addError(errors,'author','Author is required when Author URL is provided.'); validUrlIfFilled(errors,'authorUrl','Author URL');
+  if(val('publisherLogo')&&!val('publisher')) addError(errors,'publisher','Publisher is required when Publisher Logo is provided.'); validUrlIfFilled(errors,'publisherLogo','Publisher Logo URL');
+  if(val('datePublished')&&!isIsoDate(val('datePublished'))) addError(errors,'datePublished','Publication date is not valid.'); if(val('dateModified')&&!isIsoDate(val('dateModified'))) addError(errors,'dateModified','Modified date is not valid.');
+ } else if(type==='Product'){
+  requireValue(errors,'name','Product name'); requireValue(errors,'url','Product URL'); validUrlIfFilled(errors,'url','Product URL'); validUrlIfFilled(errors,'image','Image URL'); validUrlIfFilled(errors,'offerUrl','Offer URL');
+  if(val('gtin')&&!isGtin(val('gtin'))) addError(errors,'gtin','GTIN must contain 8, 12, 13 or 14 digits.');
+  const offerIds=['price','currency','availability','offerUrl']; if(offerIds.some(id=>val(id))){if(!val('price')) addError(errors,'price','Price is required when offer details are provided.'); else if(!isNonNegativeNumber(val('price'))) addError(errors,'price','Price must be a number 0 or greater.'); if(!val('currency')) addError(errors,'currency','Currency is required when an offer price is provided.'); else if(!isCurrency(val('currency'))) addError(errors,'currency','Currency must be a valid ISO 4217 code, such as USD or PKR.');}
+  if(val('ratingValue')){if(!isNonNegativeNumber(val('ratingValue'))) addError(errors,'ratingValue','Rating value must be a number 0 or greater.'); if(Number(val('ratingValue'))>5) addError(errors,'ratingValue','Rating value cannot be higher than 5.'); if(!val('reviewCount')) addError(errors,'reviewCount','Review count is required when Rating value is provided.');}
+  if(val('reviewCount')&&!isPositiveInteger(val('reviewCount'))) addError(errors,'reviewCount','Review count must be a whole number 0 or greater.');
+ } else if(type==='WebSite'){
+  requireValue(errors,'name','Website name'); requireValue(errors,'url','Website URL'); validUrlIfFilled(errors,'url','Website URL');
+  if(val('searchUrl')){validUrlIfFilled(errors,'searchUrl','Search URL'); if(!val('searchUrl').includes('{search_term_string}')) addError(errors,'searchUrl','Search URL should contain {search_term_string}.');}
+ } else if(type==='WebPage'){
+  requireValue(errors,'name','Page name'); requireValue(errors,'url','Page URL'); validUrlIfFilled(errors,'url','Page URL'); validUrlIfFilled(errors,'image','Image URL');
+  if(val('datePublished')&&!isIsoDate(val('datePublished'))) addError(errors,'datePublished','Publication date is not valid.'); if(val('dateModified')&&!isIsoDate(val('dateModified'))) addError(errors,'dateModified','Modified date is not valid.');
+ } else if(type==='Organization'){
+  requireValue(errors,'name','Organization name'); requireValue(errors,'url','Organization URL'); validUrlIfFilled(errors,'url','Organization URL'); validUrlIfFilled(errors,'logo','Logo URL');
+  if(val('email')&&!isEmail(val('email'))) addError(errors,'email','Enter a valid public email address.');
+  if(val('sameAs')) val('sameAs').split(/\n+/).map(x=>x.trim()).filter(Boolean).forEach((u,i)=>{if(!isHttpUrl(u)) addError(errors,'sameAs','Every profile URL must be a valid http/https URL.');});
+ } else if(type==='FAQPage'){
+  const rows=[...document.querySelectorAll('#faqRows .repeat-row')]; if(!rows.length){errors.push('Add at least one FAQ question and answer.');}
+  rows.forEach((r,i)=>{const q=r.querySelector('[id^="q"]'),a=r.querySelector('[id^="a"]'); if(!q||!a)return; const qv=q.value.trim(),av=a.value.trim(); if(!qv) addError(errors,q.id,'Question '+(i+1)+' is required.'); if(!av) addError(errors,a.id,'Answer '+(i+1)+' is required.');});
+ } else if(type==='BreadcrumbList'){
+  const rows=[...document.querySelectorAll('#bcRows .repeat-row')]; if(!rows.length){errors.push('Add at least one breadcrumb item.');}
+  rows.forEach((r,i)=>{const n=r.querySelector('[id^="bcName"]'),u=r.querySelector('[id^="bcUrl"]'); if(!n||!u)return; if(!n.value.trim()) addError(errors,n.id,'Breadcrumb name '+(i+1)+' is required.'); if(i<rows.length-1&&!u.value.trim()) addError(errors,u.id,'URL is required for breadcrumb items before the final item.'); if(u.value.trim()) validUrlIfFilled(errors,u.id,'Breadcrumb URL');});
+ } else if(type==='VideoObject'){
+  requireValue(errors,'name','Video name'); requireValue(errors,'description','Video description'); requireValue(errors,'thumbnailUrl','Thumbnail URL'); validUrlIfFilled(errors,'thumbnailUrl','Thumbnail URL'); validUrlIfFilled(errors,'contentUrl','Content URL'); validUrlIfFilled(errors,'embedUrl','Embed URL'); if(val('uploadDate')&&!isIsoDate(val('uploadDate'))) addError(errors,'uploadDate','Upload date is not valid.');
+ } else if(type==='LocalBusiness'){
+  requireValue(errors,'name','Business name'); validUrlIfFilled(errors,'url','Business URL'); validUrlIfFilled(errors,'image','Image URL');
+  const addr=['street','city','region','postal','country']; if(addr.some(id=>val(id))){if(!val('city')) addError(errors,'city','City is required when an address is being provided.'); if(!val('country')) addError(errors,'country','Country is required when an address is being provided.');}
+ } else if(type==='Review'){
+  requireValue(errors,'reviewBody','Review text'); requireValue(errors,'author','Reviewer name'); requireValue(errors,'itemName','Reviewed item');
+  if(val('ratingValue')&&!isNonNegativeNumber(val('ratingValue'))) addError(errors,'ratingValue','Rating value must be a number 0 or greater.'); if(val('bestRating')&&!isNonNegativeNumber(val('bestRating'))) addError(errors,'bestRating','Best rating must be a number 0 or greater.'); if(val('worstRating')&&!isNonNegativeNumber(val('worstRating'))) addError(errors,'worstRating','Worst rating must be a number 0 or greater.'); if(val('ratingValue')&&val('bestRating')&&Number(val('ratingValue'))>Number(val('bestRating'))) addError(errors,'ratingValue','Rating value cannot be higher than Best rating.'); if(val('ratingValue')&&val('worstRating')&&Number(val('ratingValue'))<Number(val('worstRating'))) addError(errors,'ratingValue','Rating value cannot be lower than Worst rating.'); if(val('bestRating')&&val('worstRating')&&Number(val('bestRating'))<Number(val('worstRating'))) addError(errors,'bestRating','Best rating cannot be lower than Worst rating.'); if(val('datePublished')&&!isIsoDate(val('datePublished'))) addError(errors,'datePublished','Review date is not valid.');
+ } else if(type==='Recipe'){
+  requireValue(errors,'name','Recipe name'); requireValue(errors,'recipeIngredient','Ingredients'); validUrlIfFilled(errors,'image','Image URL'); ['prepTime','cookTime','totalTime'].forEach(id=>{if(val(id)&&!isDuration(val(id))) addError(errors,id,'Use ISO 8601 duration format, for example PT15M.');});
+ } else if(type==='SoftwareApplication'){
+  requireValue(errors,'name','Application name'); validUrlIfFilled(errors,'url','Application URL'); const hasPrice=val('price')||val('currency'); if(hasPrice){if(!val('price')) addError(errors,'price','Price is required when currency is provided.'); else if(!isNonNegativeNumber(val('price'))) addError(errors,'price','Price must be a number 0 or greater.'); if(!val('currency')) addError(errors,'currency','Currency is required when price is provided.'); else if(!isCurrency(val('currency'))) addError(errors,'currency','Currency must be a valid ISO 4217 code, such as USD or PKR.');}
+ }
+ const box=document.getElementById('validationSummary'); if(box){if(errors.length){box.classList.add('show');box.innerHTML='<b>Please fix '+errors.length+' issue'+(errors.length===1?'':'s')+' before generating the schema.</b>';setTimeout(()=>{const first=document.querySelector('#formArea .field.invalid input,#formArea .field.invalid textarea,#formArea .field.invalid select');if(first)first.focus({preventScroll:true});},0);}else{box.classList.remove('show');box.innerHTML='';}}
+ return errors.length===0;
+}
+
+document.addEventListener('input',e=>{
+ if(!e.target.closest('#formArea .field'))return;
+ if(e.target.id==='currency') e.target.value=e.target.value.toUpperCase().replace(/[^A-Z]/g,'').slice(0,3);
+ const w=e.target.closest('.field');
+ w.classList.remove('invalid','valid');
+ const err=w.querySelector('.field-error'); if(err)err.remove();
+ const box=document.getElementById('validationSummary');
+ if(box&&document.querySelectorAll('#formArea .field.invalid').length===0){box.classList.remove('show');box.innerHTML='';}
+});
+document.addEventListener('blur',e=>{
+ const el=e.target; if(!el.closest('#formArea .field'))return;
+ const id=el.id,x=val(id); if(!x)return;
+ const errors=[];
+ const urlIds=['url','image','authorUrl','publisherLogo','offerUrl','searchUrl','thumbnailUrl','contentUrl','embedUrl','bcUrl1','bcUrl2','bcUrl3','bcUrl4','bcUrl5'];
+ if(urlIds.includes(id)) validUrlIfFilled(errors,id,'URL');
+ if(id==='currency'&&!isCurrency(x)) addError(errors,id,'Currency must be a valid ISO 4217 code, such as USD or PKR.');
+ if(id==='gtin'&&!isGtin(x)) addError(errors,id,'GTIN must contain 8, 12, 13 or 14 digits.');
+ if((id==='price'||id==='ratingValue'||id==='bestRating'||id==='worstRating')&&!isNonNegativeNumber(x)) addError(errors,id,'Value must be a number 0 or greater.');
+ if(id==='reviewCount'&&!isPositiveInteger(x)) addError(errors,id,'Review count must be a whole number 0 or greater.');
+ if(id==='email'&&!isEmail(x)) addError(errors,id,'Enter a valid public email address.');
+ if(['prepTime','cookTime','totalTime'].includes(id)&&!isDuration(x)) addError(errors,id,'Use ISO 8601 duration format, for example PT15M.');
+ if(!errors.length)setFieldValid(id);
+},{capture:true});
+
+
+function buildJSON(){
+ let t=state.schema,o={ '@context':'https://schema.org','@type':t };
+ if(t==='Article') Object.assign(o,clean({headline:val('headline'),description:val('description'),url:val('url'),image:val('image'),author:val('author')?{'@type':'Person','name':val('author'),url:val('authorUrl')}:'',publisher:val('publisher')?{'@type':'Organization','name':val('publisher'),logo:val('publisherLogo')?{'@type':'ImageObject','url':val('publisherLogo')}:undefined}:'',datePublished:dt('datePublished'),dateModified:dt('dateModified')}));
+ else if(t==='Product'){Object.assign(o,clean({name:val('name'),description:val('description'),url:val('url'),image:val('image'),brand:val('brand')?{'@type':'Brand','name':val('brand')}:undefined,sku:val('sku'),gtin:val('gtin')}));if(val('price')||val('currency')||val('availability')||val('offerUrl'))o.offers=clean({'@type':'Offer',price:val('price'),priceCurrency:val('currency').toUpperCase(),availability:val('availability'),url:val('offerUrl')});if(val('ratingValue'))o.aggregateRating=clean({'@type':'AggregateRating',ratingValue:val('ratingValue'),reviewCount:val('reviewCount')});}
+ else if(t==='WebSite'){Object.assign(o,clean({name:val('name'),url:val('url'),alternateName:val('alternateName'),description:val('description')}));if(val('searchUrl'))o.potentialAction={'@type':'SearchAction','target':val('searchUrl'),'query-input':'required name=search_term_string'};}
+ else if(t==='WebPage')Object.assign(o,clean({name:val('name'),url:val('url'),description:val('description'),image:val('image'),datePublished:dt('datePublished'),dateModified:dt('dateModified')}));
+ else if(t==='Organization')Object.assign(o,clean({name:val('name'),url:val('url'),logo:val('logo'),description:val('description'),email:val('email'),telephone:val('phone'),sameAs:val('sameAs')?val('sameAs').split(/\n+/).map(x=>x.trim()).filter(Boolean):undefined}));
+ else if(t==='FAQPage'){let els=[...document.querySelectorAll('#faqRows .repeat-row')];o.mainEntity=els.map((r,i)=>{let q=r.querySelector('#q'+(i+1)),a=r.querySelector('#a'+(i+1));return q&&a&&q.value.trim()?{'@type':'Question','name':q.value.trim(),'acceptedAnswer':{'@type':'Answer','text':a.value.trim()}}:null}).filter(Boolean);}
+ else if(t==='BreadcrumbList'){let els=[...document.querySelectorAll('#bcRows .repeat-row')];o.itemListElement=els.map((r,i)=>{let n=r.querySelector('#bcName'+(i+1)),u=r.querySelector('#bcUrl'+(i+1));return n&&n.value.trim()?{'@type':'ListItem','position':i+1,'name':n.value.trim(),...(u&&u.value.trim()?{item:u.value.trim()}: {})}:null}).filter(Boolean);}
+ else if(t==='VideoObject')Object.assign(o,clean({name:val('name'),description:val('description'),thumbnailUrl:val('thumbnailUrl'),uploadDate:dt('uploadDate'),contentUrl:val('contentUrl'),embedUrl:val('embedUrl')}));
+ else if(t==='LocalBusiness'){Object.assign(o,clean({name:val('name'),url:val('url'),image:val('image'),telephone:val('telephone'),address:clean({'@type':'PostalAddress',streetAddress:val('street'),addressLocality:val('city'),addressRegion:val('region'),postalCode:val('postal'),addressCountry:val('country')})}));if(!o.address.streetAddress&&!o.address.addressLocality&&!o.address.addressRegion&&!o.address.postalCode&&!o.address.addressCountry)delete o.address;}
+ else if(t==='Review'){o.itemReviewed={'@type':'Thing','name':val('itemName')};Object.assign(o,clean({reviewBody:val('reviewBody'),author:val('author')?{'@type':'Person','name':val('author')}:undefined,datePublished:val('datePublished'),reviewRating:val('ratingValue')?clean({'@type':'Rating',ratingValue:val('ratingValue'),bestRating:val('bestRating'),worstRating:val('worstRating')}):undefined}));}
+ else if(t==='Recipe')Object.assign(o,clean({name:val('name'),description:val('description'),image:val('image'),author:val('author')?{'@type':'Person','name':val('author')}:undefined,recipeIngredient:val('recipeIngredient')?val('recipeIngredient').split('\n').map(x=>x.trim()).filter(Boolean):undefined,prepTime:val('prepTime'),cookTime:val('cookTime'),totalTime:val('totalTime'),recipeYield:val('recipeYield'),recipeCategory:val('recipeCategory'),recipeCuisine:val('recipeCuisine')}));
+ else if(t==='SoftwareApplication')Object.assign(o,clean({name:val('name'),description:val('description'),url:val('url'),operatingSystem:val('operatingSystem'),applicationCategory:val('applicationCategory')}));if(t==='SoftwareApplication'&&val('price'))o.offers=clean({'@type':'Offer',price:val('price'),priceCurrency:val('currency').toUpperCase()});
+ return o;
+}
+let faqOutputMode='jsonld',faqStyle='Accordion';
+function syncFAQCompatibility(){
+ const isJs=faqOutputMode==='htmlcssjs';
+ document.querySelectorAll('#faqStyles .style-btn').forEach(b=>{
+   const incompatible=isJs && b.dataset.style!=='Accordion';
+   b.disabled=incompatible;
+   b.title=incompatible?'JavaScript output is currently supported with Accordion style only.':'';
+ });
+ const jsMode=document.querySelector('#faqModes .style-btn[data-mode="htmlcssjs"]');
+ if(jsMode){
+   jsMode.disabled=faqStyle!=='Accordion';
+   jsMode.title=jsMode.disabled?'Choose Accordion style first to enable HTML + CSS + JavaScript.':'';
+ }
+}
+function getFAQItems(){return [...document.querySelectorAll('#faqRows .repeat-row')].map((r,i)=>({question:(r.querySelector('#q'+(i+1))?.value||'').trim(),answer:(r.querySelector('#a'+(i+1))?.value||'').trim()})).filter(x=>x.question&&x.answer);}
+function escHtml(x){return x.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
+function buildFAQVisible(style,withCss,withJs){
+ const items=getFAQItems(); let html='';
+ if(style==='Accordion') html=items.map((x,i)=>`<div class="faq-item"><button class="faq-question" type="button" aria-expanded="${i===0?'true':'false'}">${escHtml(x.question)}<span class="faq-icon">${i===0?'−':'+'}</span></button><div class="faq-answer" ${i===0?'':'hidden'}>${escHtml(x.answer)}</div></div>`).join('');
+ if(style==='Simple') html=items.map(x=>`<div class="faq-item"><h3>${escHtml(x.question)}</h3><p>${escHtml(x.answer)}</p></div>`).join('');
+ if(style==='Cards') html=items.map(x=>`<article class="faq-card"><h3>${escHtml(x.question)}</h3><p>${escHtml(x.answer)}</p></article>`).join('');
+ if(style==='Minimal') html=items.map(x=>`<div class="faq-item"><details><summary>${escHtml(x.question)}</summary><div class="faq-answer">${escHtml(x.answer)}</div></details></div>`).join('');
+ const wrapper=`<section class="faq-section" aria-label="Frequently Asked Questions">\n  <h2>Frequently Asked Questions</h2>\n  ${html}\n</section>`;
+ if(!withCss&&!withJs)return wrapper;
+ const css=`<style>\n.faq-section{max-width:760px;margin:30px auto;font-family:Arial,sans-serif}.faq-section h2{margin-bottom:18px}.faq-item,.faq-card{border:1px solid #e5e7eb;border-radius:12px;margin-bottom:10px;background:#fff}.faq-question{width:100%;border:0;background:transparent;padding:16px;text-align:left;font:inherit;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;gap:12px}.faq-answer,.faq-item p{padding:0 16px 16px;line-height:1.65;color:#4b5563}.faq-card{padding:18px}.faq-card h3{margin-top:0}.faq-item details{padding:0}.faq-item summary{padding:16px;font-weight:700;cursor:pointer}.faq-item details .faq-answer{padding-top:0}.faq-icon{font-weight:900}</style>`;
+ const js=`<script>document.querySelectorAll('.faq-question').forEach(function(btn){btn.addEventListener('click',function(){var open=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',String(!open));var ans=this.nextElementSibling;if(ans)ans.hidden=open;var icon=this.querySelector('.faq-icon');if(icon)icon.textContent=open?'+':'−';});});<\/script>`;
+ return wrapper+'\n'+css+(withJs&&style==='Accordion'?'\n'+js:'');
+}
+function renderFAQOutput(){if(state.schema!=='FAQPage')return;if(faqOutputMode==='jsonld'){$('#output').value=JSON.stringify(buildJSON(),null,2);return;}const map={html:[false,false],htmlcss:[true,false],htmlcssjs:[true,true]};const [css,js]=map[faqOutputMode];$('#output').value=buildFAQVisible(faqStyle,css,js);}
+function renderFAQPreview(){
+ if(state.schema!=='FAQPage')return;
+ const box=document.getElementById('schemaPreview'); if(!box)return;
+ const html=buildFAQVisible(faqStyle,true,true);
+ box.innerHTML='<iframe id="faqPreviewFrame" style="width:100%;border:0;display:block;min-height:120px;background:#fff;border-radius:10px" title="FAQ live preview"></iframe>';
+ const frame=document.getElementById('faqPreviewFrame');
+ const doc=frame.contentDocument||frame.contentWindow.document;
+ doc.open();doc.write('<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{margin:0;padding:16px;font-family:Arial,sans-serif;background:#fff}</style></head><body>'+html+'</body></html>');doc.close();
+ const resize=()=>{try{frame.style.height=(doc.body.scrollHeight+32)+'px';}catch(e){}};
+ setTimeout(resize,60); frame.onload=resize;
+}
+function setFAQOutputMode(mode){
+ if(mode==='htmlcssjs' && faqStyle!=='Accordion')return;
+ faqOutputMode=mode;
+ document.querySelectorAll('#faqModes .style-btn').forEach(b=>b.classList.toggle('active',b.dataset.mode===mode));
+ document.getElementById('faqStyleWrap').style.display=mode==='jsonld'?'none':'block';
+ const title=document.getElementById('outputTitle'),copy=document.getElementById('copy'),script=document.getElementById('script'),download=document.getElementById('download');
+ if(mode==='jsonld'){title.textContent='FAQ Schema JSON-LD';copy.textContent='Copy JSON-LD';script.style.display='inline-block';download.style.display='inline-block';download.textContent='Download .jsonld';}
+ else{title.textContent='Visible FAQ code — '+faqStyle;copy.textContent='Copy Current Output';script.style.display='none';download.style.display='inline-block';download.textContent='Download .html';}
+ syncFAQCompatibility();
+ renderFAQOutput();
+ renderFAQPreview();
+ renderPlatformGuide();
+}
+document.querySelectorAll('#faqModes .style-btn').forEach(b=>b.onclick=()=>{if(!b.disabled)setFAQOutputMode(b.dataset.mode);});
+document.querySelectorAll('#faqStyles .style-btn').forEach(b=>b.onclick=()=>{if(b.disabled)return;faqStyle=b.dataset.style;document.querySelectorAll('#faqStyles .style-btn').forEach(x=>x.classList.toggle('active',x===b));syncFAQCompatibility();if(faqOutputMode!=='jsonld'){document.getElementById('outputTitle').textContent='Visible FAQ code — '+faqStyle;renderFAQOutput();}renderFAQPreview();renderPlatformGuide();});
+syncFAQCompatibility();
+function buildPreviewHtml(json){
+ const esc=x=>String(x??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+ const type=json['@type']||state.schema; const name=esc(json.name||json.headline||json.description||type);
+ const url=json.url?`<div class="pv-meta">${esc(json.url)}</div>`:'';
+ const img=json.image?`<div class="pv-img"><img src="${esc(Array.isArray(json.image)?json.image[0]:json.image)}" alt="${name}" onerror="this.parentElement.innerHTML='Image preview unavailable'" /></div>`:'';
+ let html='';
+ if(type==='Product'){const o=json.offers||{}; const r=json.aggregateRating||{}; html=`<div class="pv-page">${img}<h4>${name}</h4>${url}<div class="pv-text">${esc(json.description||'Product description')}</div>${o.price!==undefined?`<div class="pv-price">${esc(o.priceCurrency||'USD')} ${esc(o.price)}</div>`:''}${o.availability?`<div class="pv-meta">${esc(String(o.availability).split('/').pop())}</div>`:''}${r.ratingValue?`<div class="pv-stars">★ ${esc(r.ratingValue)}${r.reviewCount?` (${esc(r.reviewCount)} reviews)`:''}</div>`:''}<span class="pv-btn">View Product</span></div>`;
+ } else if(type==='Article'||type==='NewsArticle'||type==='BlogPosting'){html=`<div class="pv-page">${img}<h4>${name}</h4><div class="pv-meta">${esc(json.author?.name||'Author')}${json.datePublished?' • '+esc(json.datePublished):''}</div>${url}<div class="pv-text">${esc(json.description||'Article description')}</div><h5>Article content preview</h5><div class="pv-text">This is a visual preview based only on the generated schema data.</div></div>`;
+ } else if(type==='FAQPage'){const ents=json.mainEntity||[]; html=`<div class="pv-page"><h4>Frequently Asked Questions</h4>${ents.map(e=>`<details class="pv-faq"><summary>${esc(e.name)}</summary><div class="pv-faq-answer">${esc(e.acceptedAnswer?.text||'')}</div></details>`).join('')||'<div class="pv-note">No FAQ items to preview.</div>'}</div>`;
+ } else if(type==='BreadcrumbList'){const items=json.itemListElement||[]; html=`<div class="pv-page"><div class="pv-breadcrumb">${items.map(x=>esc(x.name)).join(' › ')||'Home'}</div><h4>${name}</h4><div class="pv-note">Breadcrumb preview based on the generated items.</div></div>`;
+ } else if(type==='VideoObject'){html=`<div class="pv-page"><div class="pv-img">▶ Video Preview</div><h4>${name}</h4>${url}<div class="pv-meta">${json.uploadDate?'Published: '+esc(json.uploadDate):''}${json.duration?' • Duration: '+esc(json.duration):''}</div><div class="pv-text">${esc(json.description||'Video description')}</div></div>`;
+ } else if(type==='Recipe'){html=`<div class="pv-page">${img}<h4>${name}</h4><div class="pv-text">${esc(json.description||'Recipe description')}</div>${json.totalTime?`<div class="pv-meta">Total time: ${esc(json.totalTime)}</div>`:''}<h5>Ingredients</h5><ul class="pv-list">${(json.recipeIngredient||[]).map(x=>`<li>${esc(x)}</li>`).join('')||'<li>Ingredients</li>'}</ul></div>`;
+ } else if(type==='Review'){html=`<div class="pv-page"><h4>${name}</h4><div class="pv-stars">★ ${esc(json.reviewRating?.ratingValue||'5')}</div><div class="pv-text">${esc(json.reviewBody||'Review text')}</div><div class="pv-meta">By ${esc(json.author?.name||'Reviewer')}</div></div>`;
+ } else {html=`<div class="pv-page">${img}<h4>${name}</h4>${url}<div class="pv-text">${esc(json.description||'Schema preview')}</div><div class="pv-note">${esc(type)} preview generated from the entered schema data.</div></div>`;}
+ return html;
+}
+function renderSchemaPreview(json){
+ const box=document.getElementById('schemaPreview'); if(!box)return;
+ box.innerHTML=buildPreviewHtml(json);
+}
+function renderMultiPreview(list){
+ const box=document.getElementById('schemaPreview'); if(!box)return;
+ box.innerHTML=list.map((item,i)=>`<div style="margin-bottom:16px"><div style="font-size:11px;font-weight:800;color:#4f46e5;letter-spacing:.3px;margin-bottom:6px">${i+1}. ${item.type.toUpperCase()}</div>${buildPreviewHtml(item.json)}</div>`).join('<hr style="margin:16px 0;border:none;border-top:1px solid #e4e7ec">');
+}
+
+$('#n3').onclick=()=>{
+ if(!validateForm(state.schema))return;
+ let json=buildJSON();
+ if(schemaMode==='multiple'){
+   const stored=Object.assign({},json); delete stored['@context'];
+   multiList.push({type:state.schema,json:stored});
+   updateCartUI();
+   show(2);
+   return;
+ }
+ $('#output').value=JSON.stringify(json,null,2);$('#outPlatform').textContent=state.platform;$('#outSchema').textContent=state.schema;renderSchemaPreview(json);$('#b4').textContent='← Edit Form';const faq=state.schema==='FAQPage';document.getElementById('faqOutputTools').style.display=faq?'block':'none';document.getElementById('faqSeparateNote').style.display=faq?'block':'none';faqOutputMode='jsonld';faqStyle='Accordion';document.querySelectorAll('#faqModes .style-btn').forEach((b,i)=>b.classList.toggle('active',i===0));document.querySelectorAll('#faqStyles .style-btn').forEach((b,i)=>b.classList.toggle('active',i===0));document.getElementById('faqStyleWrap').style.display='none';document.getElementById('outputTitle').textContent=faq?'FAQ Schema JSON-LD':'JSON-LD';document.getElementById('copy').textContent='Copy JSON-LD';document.getElementById('script').style.display='inline-block';document.getElementById('download').style.display='inline-block';document.getElementById('download').textContent='Download .jsonld';syncFAQCompatibility();if(faq)renderFAQPreview();renderPlatformGuide();show(4);
+};
+async function copyText(text){
+  try{
+    if(navigator.clipboard && window.isSecureContext){
+      await navigator.clipboard.writeText(text);
+      return true;
+    }
+  }catch(e){}
+  try{
+    const ta=document.createElement('textarea');
+    ta.value=text;
+    ta.setAttribute('readonly','');
+    ta.style.position='fixed';
+    ta.style.left='-9999px';
+    ta.style.top='0';
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    ta.setSelectionRange(0,ta.value.length);
+    const ok=document.execCommand('copy');
+    document.body.removeChild(ta);
+    return ok;
+  }catch(e){return false;}
+}
+function showCopyResult(btn,ok,restore){
+  btn.textContent=ok?'Copied ✓':'Copy failed — select text manually';
+  setTimeout(()=>{btn.textContent=restore;},1800);
+}
+$('#copy').onclick=async()=>{
+  const text=$('#output').value;
+  const restore=faqOutputMode==='jsonld'?'Copy JSON-LD':'Copy Current Output';
+  const ok=await copyText(text);
+  showCopyResult($('#copy'),ok,restore);
+};
+$('#script').onclick=async()=>{
+  const s='<script type="application/ld+json">\n'+$('#output').value+'\n<\/script>';
+  const ok=await copyText(s);
+  showCopyResult($('#script'),ok,'Copy Script Tag');
+};
+$('#download').onclick=()=>{const visible=state.schema==='FAQPage'&&faqOutputMode!=='jsonld';const content=$('#output').value;const type=visible?'text/html':'application/ld+json';const name=visible?'faq-section.html':'schema.jsonld';let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([content],{type}));a.download=name;a.click();URL.revokeObjectURL(a.href);};
+$('#again').onclick=()=>location.reload();
+</script>
+<script>
+document.getElementById("rxtg").addEventListener("click",function(){var d=document.documentElement,n=d.getAttribute("data-theme")==="light"?"dark":"light";d.setAttribute("data-theme",n);try{localStorage.setItem("rvt",n)}catch(e){}});
+document.querySelectorAll('.rx-f a[href="#"]').forEach(function(a){a.addEventListener("click",function(e){e.preventDefault()})});
+(function(){var tabs=document.querySelectorAll('.mode-tab'),mv=document.getElementById('mv');function sync(){tabs.forEach(function(t){t.classList.toggle('on',t.querySelector('input').checked)});mv.textContent=document.getElementById('modeMultiple').checked?'Multiple':'Single'}document.querySelectorAll('input[name="schemaMode"]').forEach(function(r){r.addEventListener('change',sync)});sync()})();
+</script>
+</body>
+</html>
