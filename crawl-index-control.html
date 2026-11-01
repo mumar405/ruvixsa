@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- TEMPORARY: remove the next line when you are ready for Google to index this page -->
+<meta name="robots" content="noindex, nofollow">
+<title>Free Robots.txt Generator &amp; Crawl Control Tools | Ruvixsa</title>
+<meta name="description" content="Free robots.txt generator, tester and auditor, plus meta robots tags and an AI crawler check. Everything runs in your browser and nothing is uploaded.">
+<link rel="canonical" href="https://ruvixsa.com/crawl-index-control/">
+<meta name="theme-color" content="#070914">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ruvixsa">
+<meta property="og:title" content="Free Robots.txt Generator &amp; Crawl Control Tools | Ruvixsa">
+<meta property="og:description" content="Free robots.txt generator, tester and auditor, plus meta robots tags and an AI crawler check. Everything runs in your browser and nothing is uploaded.">
+<meta property="og:url" content="https://ruvixsa.com/crawl-index-control/">
+<meta property="og:image" content="https://ruvixsa.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Robots.txt Generator &amp; Crawl Control Tools | Ruvixsa">
+<meta name="twitter:description" content="Free robots.txt generator, tester and auditor, plus meta robots tags and an AI crawler check. Everything runs in your browser and nothing is uploaded.">
+<meta name="twitter:image" content="https://ruvixsa.com/og-image.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "@id": "https://ruvixsa.com/crawl-index-control/#app", "name": "Ruvixsa Crawl & Index Control", "url": "https://ruvixsa.com/crawl-index-control/", "description": "Free robots.txt generator, tester and auditor, plus meta robots tags and an AI crawler check. Everything runs in your browser and nothing is uploaded.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any (web-based)", "browserRequirements": "Requires JavaScript", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "provider": {"@type": "Organization", "name": "Ruvixsa", "url": "https://ruvixsa.com/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ruvixsa.com/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://ruvixsa.com/#tools"}, {"@type": "ListItem", "position": 3, "name": "Crawl & Index Control", "item": "https://ruvixsa.com/crawl-index-control/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a robots.txt file?", "acceptedAnswer": {"@type": "Answer", "text": "It is a plain text file at the root of your website that tells crawlers which paths they may or may not request. Well-behaved crawlers such as Googlebot and Bingbot follow it. It is a request, not a security control."}}, {"@type": "Question", "name": "Does Disallow remove a page from Google?", "acceptedAnswer": {"@type": "Answer", "text": "No. Disallow stops crawling, not indexing. A blocked page can still appear in search results if other pages link to it. To keep a page out of search results, use a noindex meta tag or an X-Robots-Tag header, and do not block that page in robots.txt, because crawlers must be able to read the tag."}}, {"@type": "Question", "name": "Where do I put the robots.txt file?", "acceptedAnswer": {"@type": "Answer", "text": "At the root of the host, for example https://example.com/robots.txt. Each subdomain needs its own file. In Blogger you can add custom robots.txt text in the settings, and in WordPress an SEO plugin or a file in the site root does the job. Menu names can differ, so check your platform."}}, {"@type": "Question", "name": "How does Google choose between Allow and Disallow?", "acceptedAnswer": {"@type": "Answer", "text": "The most specific rule wins, which means the one with the longest matching path. If an Allow and a Disallow match with the same length, Google uses the less restrictive one, which is Allow."}}, {"@type": "Question", "name": "Should I block AI crawlers?", "acceptedAnswer": {"@type": "Answer", "text": "It is your choice. Training crawlers such as GPTBot and ClaudeBot are separate from search bots such as OAI-SearchBot and Claude-SearchBot, so you can block one kind and allow the other. Blocking search bots can reduce how often your site appears in those AI search tools. Some user-triggered fetchers may not follow robots.txt at all."}}, {"@type": "Question", "name": "Can robots.txt hide private pages?", "acceptedAnswer": {"@type": "Answer", "text": "No. The file is public, and listing a path in it shows that the path exists. Protect private pages with a login or other access control."}}, {"@type": "Question", "name": "Does this tool read my live robots.txt?", "acceptedAnswer": {"@type": "Answer", "text": "No. You paste the text yourself. The HTTP status checker asks your browser to request a URL, and many sites do not allow that, so a failed check does not mean the page is down."}}, {"@type": "Question", "name": "Is my text uploaded or saved?", "acceptedAnswer": {"@type": "Answer", "text": "No. Everything runs in your browser and nothing you type is sent to Ruvixsa or saved. The status checker sends one request from your browser to the URL you enter."}}]}]}</script>
+<script>try{var d=document.documentElement,t=null;try{t=localStorage.getItem("rvt")}catch(e){}if(t!=="light"&&t!=="dark")t=(window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark";d.setAttribute("data-theme",t)}catch(e){}</script>
+<style>
+/* ====== RUVIXSA THEME TOKENS ====== */
+:root,[data-theme="dark"]{
+  --page:#070914; --card:#0e1120; --line:#222741; --text:#f4f6fb; --muted:#b3bad0;
+  --teal:#2dd4bf; --violet:#8b7cf6; --blue:#5aa8e0;
+  --accent:#8b7cf6;
+  --good:#4ade80; --warn:#fbbf24; --bad:#f87171;
+  --soft:#151a31; --btn-text:#071018; --code-bg:#05070f; --shadow:0 20px 60px rgba(0,0,0,.25); --code-text:#e2e8f0;
+  --warn-bg:rgba(251,191,36,.08); --warn-line:rgba(251,191,36,.35);
+  --phone:#2a3050; --track:#222741;
+  color-scheme:dark;
+}
+[data-theme="light"]{
+  --page:#f6f7fb; --card:#ffffff; --line:#e0e4f0; --text:#12152a; --muted:#4a5474;
+  --teal:#0d9488; --violet:#6d5ef0; --blue:#2b7fc0;
+  --accent:#5b4bd5; /* andaza: light mein violet text ke liye gehra */
+  --good:#15803d; --warn:#b45309; --bad:#b91c1c;
+  --soft:#f1f3fa; --btn-text:#071018; --code-bg:#1e293b; --shadow:0 18px 50px rgba(31,41,55,.10); --code-text:#e2e8f0;
+  --warn-bg:#fff7e0; --warn-line:#f0c75e;
+  --phone:#1a1a1a; --track:#e0e4f0;
+  color-scheme:light;
+}
+:root{
+  --grad:linear-gradient(90deg,var(--violet),var(--blue),var(--teal));
+  --grad-anim:linear-gradient(90deg,var(--violet),var(--blue),var(--teal),var(--violet));
+  --btn-grad:linear-gradient(135deg,#8b7cf6,#2dd4bf);
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:radial-gradient(800px 380px at 85% -5%,rgba(45,212,191,.13),transparent),radial-gradient(700px 380px at 0 10%,rgba(139,124,246,.12),transparent),var(--page);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;transition:background .25s,color .25s}
+.tool-wrap{max-width:1160px;margin:0 auto;padding:28px 18px 60px}
+@media(max-width:520px){.tool-wrap{padding:14px 10px 40px}}
+
+/* ====== HERO (H1) + ASLI MATN (Schema tool jaisa dhancha) ====== */
+.hero{text-align:center;padding:25px 10px 25px}
+.badge{display:inline-block;background:rgba(45,212,191,.12);color:var(--teal);border:1px solid rgba(45,212,191,.3);padding:7px 13px;border-radius:999px;font-size:13px;font-weight:800;margin-bottom:13px}
+h1{font-size:clamp(30px,5vw,48px);margin:0 0 10px;letter-spacing:-1.5px;line-height:1.15;color:var(--text)}
+h1 em,.seo h2{font-style:normal;background:var(--grad-anim);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;animation:rxsh 6s linear infinite}
+@keyframes rxsh{to{background-position:300% 0}}
+@media (prefers-reduced-motion:reduce){h1 em,.seo h2{animation:none}}
+.hero p{max-width:760px;margin:auto;color:var(--muted);line-height:1.65}
+.seo{margin-top:30px}
+.seo-card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;margin-top:16px}
+.seo h2{margin:0 0 12px;font-size:24px;width:fit-content;max-width:100%}
+.seo p,.seo li{color:var(--muted);line-height:1.65;font-size:15px}
+.seo p{margin:0 0 12px}
+.seo ol,.seo ul{margin:0;padding-left:22px}
+.seo li{margin:8px 0}
+.seo b{color:var(--text)}
+.seo-q{border:1px solid var(--line);border-radius:12px;margin-top:10px;background:var(--soft)}
+.seo-q summary{cursor:pointer;padding:14px;font-weight:700;color:var(--text)}
+.seo-q p{padding:0 14px 14px;margin:0}
+.seo-note{margin-top:16px!important;font-size:13px!important}
+
+
+/* ====== CRAWL & INDEX CONTROL ====== */
+.cc{max-width:980px;margin:0 auto}
+.cc-sec{background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);padding:22px;margin-bottom:20px;color:var(--text)}
+.cc-sec h2{margin:0 0 6px;font-size:21px;color:var(--text)}
+.cc-lead{margin:0 0 16px;font-size:14px;color:var(--muted);line-height:1.6}
+.cc-row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.cc-row label,.cc label.cc-l{font-weight:600;color:var(--text);font-size:14px}
+.cc input[type="text"],.cc input[type="number"],.cc select,.cc textarea{width:100%;padding:11px 12px;border:2px solid var(--line);border-radius:10px;background:var(--page);color:var(--text);font-family:inherit;font-size:14.5px}
+.cc input:focus,.cc select:focus,.cc textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(45,212,191,.12)}
+.cc input::placeholder,.cc textarea::placeholder{color:var(--muted);opacity:.8}
+.cc textarea{min-height:140px;resize:vertical;line-height:1.5;font-family:'Courier New',monospace;font-size:13.5px}
+.cc-btns{display:flex;gap:8px;flex-wrap:wrap}
+.cc-btn{padding:8px 14px;border:1px solid var(--line);border-radius:8px;background:var(--soft);color:var(--text);font-size:13px;font-weight:600;cursor:pointer;font-family:inherit}
+.cc-btn:hover{border-color:var(--teal)}
+.cc-btn.primary{background:var(--btn-grad);color:var(--btn-text);border:0}
+.cc-rule{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.8fr) minmax(0,1.6fr) auto;gap:8px;margin-bottom:8px;align-items:center}
+@media(max-width:640px){.cc-rule{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.cc-rule input[type="text"]{grid-column:1/3}}
+.cc-x{padding:8px 12px;border:1px solid var(--line);background:transparent;color:var(--bad);border-radius:8px;cursor:pointer;font-size:13px}
+.cc-code{margin:0;padding:14px;background:var(--code-bg);color:var(--code-text);border-radius:12px;border:1px solid var(--line);font-family:'Courier New',monospace;font-size:13px;line-height:1.55;white-space:pre-wrap;overflow-wrap:break-word;max-height:340px;overflow:auto}
+.cc-meta{font-size:12.5px;color:var(--muted);line-height:1.55}
+.cc-warns{margin:0 0 12px;padding:10px 12px 10px 28px;border-radius:8px;background:var(--warn-bg);color:var(--warn);border:1px solid var(--warn-line);font-size:13px;line-height:1.5}
+.cc-warns[hidden],.cc-out[hidden],.cc-toast[hidden]{display:none}
+.cc-sub{margin:20px 0 8px;font-size:16px;font-weight:700;color:var(--text)}
+.cc-out{margin-top:12px;border:1px solid var(--line);border-radius:12px;background:var(--page);padding:12px 14px;font-size:14px;line-height:1.55}
+.cc-item{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)}
+.cc-item:last-child{border-bottom:0}
+.cc-tag{flex:none;align-self:flex-start;padding:2px 9px;border-radius:999px;font-size:11.5px;font-weight:800;border:1px solid var(--line);color:var(--muted);text-transform:uppercase;letter-spacing:.3px}
+.cc-tag.error,.cc-tag.bad{color:var(--bad);border-color:var(--bad)}
+.cc-tag.warn{color:var(--warn);border-color:var(--warn)}
+.cc-tag.ok,.cc-tag.good{color:var(--good);border-color:var(--good)}
+.cc-tag.info{color:var(--teal);border-color:var(--teal)}
+.cc-table{width:100%;border-collapse:collapse;font-size:13.5px}
+.cc-table th{text-align:left;color:var(--muted);font-weight:600;padding:8px;border-bottom:1px solid var(--line)}
+.cc-table td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--text)}
+.cc-tw{overflow-x:auto}
+.cc-grid2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+@media(max-width:640px){.cc-grid2{grid-template-columns:minmax(0,1fr)}}
+.cc-check{display:flex;gap:8px;align-items:center;font-size:14px;color:var(--text);cursor:pointer}
+.cc-check input{width:18px;height:18px;accent-color:var(--violet);flex:none}
+.cc-toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:var(--card);color:var(--text);border:1px solid var(--teal);padding:10px 16px;border-radius:10px;font-size:13.5px;z-index:50;box-shadow:var(--shadow);max-width:92vw}
+.seo table{width:100%;border-collapse:collapse;font-size:14px;margin:4px 0 12px}
+.seo th{text-align:left;color:var(--text);font-weight:700;padding:9px 10px;border-bottom:1px solid var(--line)}
+.seo td{padding:9px 10px;border-bottom:1px solid var(--line);color:var(--muted)}
+.seo .tw{overflow-x:auto}
+
+/* ====== RUVIXSA HEADER / FOOTER ====== */
+.rx-h,.rx-f{--rb:#070914;--rl:#222741;--rt:#f4f6fb;--rm:#b3bad0;--rg:#2dd4bf;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+html[data-theme="light"] .rx-h,html[data-theme="light"] .rx-f{--rb:#f6f7fb;--rl:#e0e4f0;--rt:#12152a;--rm:#4a5474;--rg:#0d9488}
+.rx-h{position:sticky;top:0;z-index:30;border-bottom:1px solid var(--rl);background:var(--rb);background:color-mix(in srgb,var(--rb) 82%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.rx-in{max-width:1160px;margin:0 auto;padding:12px 18px;display:flex;align-items:center;justify-content:space-between}
+.rx-logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;letter-spacing:-.02em;color:var(--rt);text-decoration:none}
+.rx-logo svg{width:38px;height:38px}
+.rx-links{display:flex;align-items:center}
+.rx-links a{color:var(--rm);text-decoration:none;font-size:15px;margin-left:18px}
+.rx-links a:hover{color:var(--rt)}
+#rxtg{width:36px;height:36px;margin-left:14px;border-radius:50%;border:1px solid var(--rl);background:transparent;color:var(--rm);display:grid;place-items:center;cursor:pointer;padding:0}
+#rxtg:hover{color:var(--rg);border-color:var(--rg)}
+#rxtg svg{width:17px;height:17px}
+html[data-theme="dark"] #rxtg .moon{display:none}
+html[data-theme="light"] #rxtg .sun{display:none}
+.rx-f{border-top:1px solid var(--rl);background:var(--rb);color:var(--rm);font-size:14px;margin-top:40px}
+.rx-in2{max-width:1160px;margin:0 auto;padding:32px 18px 36px}
+.rx-fg{display:grid;gap:26px 20px;grid-template-columns:1fr 1fr}
+.rx-fb{grid-column:1/-1}
+@media(min-width:720px){.rx-fg{grid-template-columns:1.5fr 1fr 1fr 1fr}.rx-fb{grid-column:auto}}
+.rx-fb strong{font-size:18px;color:var(--rt)}
+.rx-fb p{margin:6px 0 0;max-width:260px}
+.rx-fh{margin:0 0 8px;font-weight:700;color:var(--rt);font-size:14px}
+.rx-fc a{display:block;color:var(--rm);text-decoration:none;padding:4px 0}
+.rx-fc a:hover{color:var(--rg)}
+.rx-fl{margin-top:28px;padding-top:18px;border-top:1px solid var(--rl);font-size:13px}
+</style>
+</head>
+<body>
+<header class="rx-h"><div class="rx-in"><a class="rx-logo" href="/"><svg viewBox="0 0 64 64" fill="none" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="rxbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a1740"/><stop offset="1" stop-color="#0a2a33"/></linearGradient><linearGradient id="rxlg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b7cf6"/><stop offset="1" stop-color="#2dd4bf"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="18" fill="url(#rxbg)" stroke="#2c3158"/><path d="M22 47V17h11a9.5 9.5 0 0 1 0 19H22" stroke="#fff" stroke-width="6"/><path d="M34 37l11 11" stroke="url(#rxlg)" stroke-width="6"/><path d="M47 14l1.6 3.9L52.5 19.5l-3.9 1.6L47 25l-1.6-3.9L41.5 19.5l3.9-1.6z" fill="#2dd4bf"/></svg>Ruvixsa</a><div class="rx-links"><a href="/#tools">Tools</a><a href="/#about">About</a><button id="rxtg" type="button" aria-label="Switch between light and dark theme"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button></div></div></header>
+<main class="tool-wrap">
+<header class="hero"><span class="badge">FREE PUBLIC TOOL</span><h1>Free Crawl &amp; Index <em>Control</em></h1><p>Build and check a robots.txt file, test URLs and AI crawlers, and create meta robots tags. Everything runs in your browser.</p></header>
+<div class="cc">
+<div class="cc-sec"><h2>1. Create a robots.txt file</h2><p class="cc-lead">Add rules for any crawler. The file updates as you type.</p>
+<div class="cc-row"><span class="cc-l">Quick start</span><div class="cc-btns"><button type="button" class="cc-btn" id="pTypical">Typical website</button><button type="button" class="cc-btn" id="pStaging">Block everything (staging)</button><button type="button" class="cc-btn" id="pAI">Opt out of AI training bots</button></div></div>
+<div id="gRows"></div>
+<div class="cc-btns" style="margin:4px 0 16px"><button type="button" class="cc-btn" id="gAdd">+ Add rule</button><button type="button" class="cc-btn" id="gReset">Reset</button></div>
+<div style="margin-bottom:16px"><label class="cc-l" for="gSitemap">Sitemap URLs (one per line, optional)</label><textarea id="gSitemap" style="min-height:70px" placeholder="https://yourwebsite.com/sitemap.xml"></textarea></div>
+<ul class="cc-warns" id="gWarn" hidden></ul>
+<pre class="cc-code" id="gOut"></pre>
+<div class="cc-btns" style="margin-top:10px"><button type="button" class="cc-btn primary" id="gCopy">Copy robots.txt</button><button type="button" class="cc-btn" id="gDownload">Download robots.txt</button></div>
+<p class="cc-meta" style="margin-top:10px">Upload the file to the root of your site so it opens at https://yourwebsite.com/robots.txt. The &quot;AI training bots&quot; button blocks GPTBot, ClaudeBot, Google-Extended and CCBot only, and only crawlers that follow robots.txt will respect it.</p></div>
+<div class="cc-sec"><h2>2. Check a robots.txt file</h2><p class="cc-lead">Paste a robots.txt file, then audit it, test a URL or check AI crawlers. Nothing is fetched or uploaded.</p>
+<div class="cc-row"><label class="cc-l" for="rtxt">robots.txt text</label><div class="cc-btns"><button type="button" class="cc-btn" id="useGenerated">Use the file from step 1</button><button type="button" class="cc-btn" id="loadExample">Load example</button><button type="button" class="cc-btn" id="clearRtxt">Clear</button></div></div>
+<textarea id="rtxt" placeholder="User-agent: *&#10;Disallow: /admin/"></textarea>
+<h3 class="cc-sub">Audit</h3><div class="cc-btns"><button type="button" class="cc-btn primary" id="aRun">Audit the file</button></div><div class="cc-out" id="aOut" hidden></div>
+<h3 class="cc-sub">Test a URL</h3><div class="cc-grid2"><div><label class="cc-l" for="tUrl">URL or path</label><input type="text" id="tUrl" placeholder="/blog/my-post/ or https://example.com/blog/" autocomplete="off"></div><div><label class="cc-l" for="tUa">Crawler name</label><input type="text" id="tUa" list="uaList" value="Googlebot" autocomplete="off"><datalist id="uaList"><option value="*">* (all crawlers)</option><option value="Googlebot">Googlebot</option><option value="Googlebot-Image">Googlebot-Image</option><option value="Bingbot">Bingbot</option><option value="GPTBot">GPTBot</option><option value="ClaudeBot">ClaudeBot</option><option value="OAI-SearchBot">OAI-SearchBot</option><option value="PerplexityBot">PerplexityBot</option></datalist></div></div>
+<div class="cc-btns" style="margin-top:10px"><button type="button" class="cc-btn primary" id="tRun">Test</button></div><div class="cc-out" id="tOut" hidden></div>
+<h3 class="cc-sub">AI crawler check</h3><div class="cc-btns"><button type="button" class="cc-btn primary" id="aiRun">Check AI crawlers</button></div><div class="cc-out" id="aiOut" hidden></div></div>
+<div class="cc-sec"><h2>3. Meta robots tag</h2><p class="cc-lead">Control indexing for a single page with a meta tag or an HTTP header.</p>
+<div class="cc-grid2"><div><label class="cc-l" for="mName">Applies to</label><select id="mName"><option value="robots">All search engines (robots)</option><option value="googlebot">Google only (googlebot)</option><option value="bingbot">Bing only (bingbot)</option></select></div>
+<div><label class="cc-l" for="mIndex">Indexing</label><select id="mIndex"><option value="index">index</option><option value="noindex">noindex</option></select></div>
+<div><label class="cc-l" for="mFollow">Links</label><select id="mFollow"><option value="follow">follow</option><option value="nofollow">nofollow</option></select></div>
+<div><label class="cc-l" for="mImage">Max image preview</label><select id="mImage"><option value="">Not set</option><option value="none">none</option><option value="standard">standard</option><option value="large">large</option></select></div>
+<div><label class="cc-l" for="mSnippet">Max snippet length (characters)</label><input type="number" id="mSnippet" placeholder="Not set. Use -1 for no limit"></div>
+<div><label class="cc-l" for="mVideo">Max video preview (seconds)</label><input type="number" id="mVideo" placeholder="Not set. Use -1 for no limit"></div></div>
+<div class="cc-btns" style="margin:14px 0"><label class="cc-check"><input type="checkbox" id="mNoarchive"> noarchive</label><label class="cc-check"><input type="checkbox" id="mNosnippet"> nosnippet</label><label class="cc-check"><input type="checkbox" id="mNoimage"> noimageindex</label></div>
+<ul class="cc-warns" id="mWarn" hidden></ul>
+<pre class="cc-code" id="mOut" style="max-height:none"></pre><div class="cc-btns" style="margin:8px 0 14px"><button type="button" class="cc-btn primary" id="mCopy">Copy meta tag</button></div>
+<pre class="cc-code" id="mHeader" style="max-height:none"></pre><div class="cc-btns" style="margin-top:8px"><button type="button" class="cc-btn" id="mCopyH">Copy header</button></div>
+<p class="cc-meta" id="mNote" style="margin-top:10px"></p></div>
+<div class="cc-sec"><h2>4. HTTP status checker</h2><p class="cc-lead">Ask your browser for a URL and see the status code. Many sites block this kind of request, so a failed check does not mean the page is down.</p>
+<div class="cc-grid2"><div><label class="cc-l" for="sUrl">URL</label><input type="text" id="sUrl" placeholder="https://example.com/page/" autocomplete="off"></div><div style="align-self:end"><button type="button" class="cc-btn primary" id="sRun">Check status</button></div></div><div class="cc-out" id="sOut" hidden></div></div>
+<div class="cc-sec"><h2>5. Download a report</h2><p class="cc-lead">Collect what you have run above into one text file.</p><div class="cc-btns"><button type="button" class="cc-btn primary" id="xRun">Download report (.txt)</button></div></div>
+</div>
+<div id="toast" class="cc-toast" role="status" aria-live="polite" hidden></div>
+<section class="seo" aria-label="About this tool">
+<div class="seo-card"><h2>Robots.txt and meta robots: what is the difference?</h2><p>A robots.txt file controls which paths crawlers may request. A meta robots tag or an X-Robots-Tag header controls what a search engine may do with a page it has already crawled, such as indexing it or showing a snippet.</p><p>The two work together but do different jobs. To keep a page out of search results, use noindex, and make sure robots.txt does not block that page, because a crawler cannot read a noindex tag on a page it is not allowed to open.</p></div>
+<div class="seo-card"><h2>How to use this tool</h2><ol><li><b>Build a file</b> in step 1, or use a quick start button, then copy or download it.</li><li><b>Check a file</b> in step 2 by pasting it. Run the audit, test a URL, or check which AI crawlers are blocked.</li><li><b>Make a meta robots tag</b> in step 3 for pages you want to keep out of the index.</li><li><b>Download a report</b> in step 5 if you want to keep the results.</li></ol></div>
+<div class="seo-card"><h2>Robots.txt syntax cheat sheet</h2><div class="tw"><table><thead><tr><th>Rule</th><th>What it does</th></tr></thead><tbody><tr><td>User-agent: *</td><td>Starts a group of rules for all crawlers.</td></tr><tr><td>Disallow: /private/</td><td>Blocks every path that starts with /private/.</td></tr><tr><td>Allow: /private/help/</td><td>Makes an exception inside a blocked folder.</td></tr><tr><td>Disallow: /*.pdf$</td><td>Blocks URLs that end in .pdf. The * matches any characters and $ marks the end.</td></tr><tr><td>Sitemap: https://example.com/sitemap.xml</td><td>Tells crawlers where your sitemap is.</td></tr></tbody></table></div><p class="cc-meta">Paths are case sensitive. The longest matching rule wins, and Allow wins a tie.</p></div>
+<div class="seo-card"><h2>Frequently asked questions</h2><details class="seo-q"><summary>What is a robots.txt file?</summary><p>It is a plain text file at the root of your website that tells crawlers which paths they may or may not request. Well-behaved crawlers such as Googlebot and Bingbot follow it. It is a request, not a security control.</p></details><details class="seo-q"><summary>Does Disallow remove a page from Google?</summary><p>No. Disallow stops crawling, not indexing. A blocked page can still appear in search results if other pages link to it. To keep a page out of search results, use a noindex meta tag or an X-Robots-Tag header, and do not block that page in robots.txt, because crawlers must be able to read the tag.</p></details><details class="seo-q"><summary>Where do I put the robots.txt file?</summary><p>At the root of the host, for example https://example.com/robots.txt. Each subdomain needs its own file. In Blogger you can add custom robots.txt text in the settings, and in WordPress an SEO plugin or a file in the site root does the job. Menu names can differ, so check your platform.</p></details><details class="seo-q"><summary>How does Google choose between Allow and Disallow?</summary><p>The most specific rule wins, which means the one with the longest matching path. If an Allow and a Disallow match with the same length, Google uses the less restrictive one, which is Allow.</p></details><details class="seo-q"><summary>Should I block AI crawlers?</summary><p>It is your choice. Training crawlers such as GPTBot and ClaudeBot are separate from search bots such as OAI-SearchBot and Claude-SearchBot, so you can block one kind and allow the other. Blocking search bots can reduce how often your site appears in those AI search tools. Some user-triggered fetchers may not follow robots.txt at all.</p></details><details class="seo-q"><summary>Can robots.txt hide private pages?</summary><p>No. The file is public, and listing a path in it shows that the path exists. Protect private pages with a login or other access control.</p></details><details class="seo-q"><summary>Does this tool read my live robots.txt?</summary><p>No. You paste the text yourself. The HTTP status checker asks your browser to request a URL, and many sites do not allow that, so a failed check does not mean the page is down.</p></details><details class="seo-q"><summary>Is my text uploaded or saved?</summary><p>No. Everything runs in your browser and nothing you type is sent to Ruvixsa or saved. The status checker sends one request from your browser to the URL you enter.</p></details></div>
+</section>
+</main>
+<footer class="rx-f"><div class="rx-in2"><div class="rx-fg"><div class="rx-fb"><strong>Ruvixsa</strong><p>Free web tools for smarter optimization.</p></div><div class="rx-fc"><p class="rx-fh">Tools</p><a href="/schema-generator/">Schema Generator</a><a href="/qr-code-generator/">QR Code Generator</a><a href="/#tools">Crawl &amp; Index Control</a><a href="/meta-tag-generator/">SEO Meta Tag Generator</a><a href="/#tools">Image Compressor</a><a href="/#tools">Password Generator</a></div><div class="rx-fc"><p class="rx-fh">Explore</p><a href="https://digitalearnhubfast.blogspot.com" target="_blank" rel="noopener">Blog</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></div><div class="rx-fc"><p class="rx-fh">Legal</p><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/disclaimer.html">Disclaimer</a></div></div><div class="rx-fl">© 2026 Ruvixsa. Free web tools.</div></div></footer>
+<script>
+(function () {
+'use strict';
+function $(id) { return document.getElementById(id); }
+var toastTimer = null;
+var UAS = ['*', 'Googlebot', 'Googlebot-Image', 'Googlebot-News', 'Googlebot-Video', 'Bingbot', 'DuckDuckBot', 'Baiduspider', 'YandexBot', 'Applebot', 'GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-SearchBot', 'Claude-User', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'CCBot'];
+var AI_BOTS = [
+  ['GPTBot', 'OpenAI', 'Training', 'Disallowing it signals that your content should not be used to train OpenAI models.'],
+  ['OAI-SearchBot', 'OpenAI', 'Search', 'Used to show sites in ChatGPT search results. Blocking it can keep your site out of those answers.'],
+  ['ChatGPT-User', 'OpenAI', 'User action', 'Visits a page when a ChatGPT user asks for it. OpenAI says robots.txt rules may not apply.'],
+  ['ClaudeBot', 'Anthropic', 'Training', 'Anthropic crawler that collects public web content for model training.'],
+  ['Claude-SearchBot', 'Anthropic', 'Search', 'Supports search results for Claude users.'],
+  ['Claude-User', 'Anthropic', 'User action', 'Fetches a page when a Claude user asks for it.'],
+  ['PerplexityBot', 'Perplexity', 'Search', 'Builds the index behind Perplexity search results.'],
+  ['Perplexity-User', 'Perplexity', 'User action', 'Fetches pages for user requests. Perplexity says it generally ignores robots.txt for these.'],
+  ['Google-Extended', 'Google', 'Training control', 'A control token, not a separate crawler. It does not affect Google Search.'],
+  ['CCBot', 'Common Crawl', 'Dataset', 'Builds the Common Crawl dataset that many AI projects use.']
+];
+var G_FALLBACK = {'googlebot-image': 'googlebot', 'googlebot-news': 'googlebot', 'googlebot-video': 'googlebot'};
+var state = {generated: '', audit: null, test: null, ai: null, meta: null, status: null};
+function toast(m) { var t = $('toast'); t.textContent = m; t.hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(function () { t.hidden = true; }, 2600); }
+function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text; return e; }
+function isHttp(u) { return /^https?:\/\/[^\s]+$/i.test(u); }
+function copyText(text, done) {
+  function manual() { toast('Copy was blocked. Select the text and copy it by hand.'); }
+  function legacy() { var h; try { h = el('textarea'); h.value = text; h.setAttribute('readonly', ''); h.style.position = 'fixed'; h.style.opacity = '0.01'; document.body.appendChild(h); h.select(); var ok = document.execCommand('copy'); document.body.removeChild(h); if (ok) { toast(done); return; } } catch (e) { if (h && h.parentNode) h.parentNode.removeChild(h); } manual(); }
+  if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(text).then(function () { toast(done); }, legacy); } else { legacy(); }
+}
+function download(name, text) {
+  var blob = new Blob([text], {type: 'text/plain;charset=utf-8'}), url = URL.createObjectURL(blob), a = el('a');
+  a.href = url; a.download = name; document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+}
+/* ---------- robots.txt parser aur matcher (Google ke qaide ke mutabiq) ---------- */
+function parse(text) {
+  var out = {groups: [], sitemaps: [], issues: [], lines: 0}, cur = null, rawLines = String(text).replace(/^\uFEFF/, '').split(/\r\n|\r|\n/);
+  out.lines = rawLines.length;
+  rawLines.forEach(function (raw, i) {
+    var n = i + 1, line = raw.split('#')[0].trim();
+    if (!line) return;
+    var m = /^([^:]+):(.*)$/.exec(line);
+    if (!m) { out.issues.push({level: 'error', line: n, msg: 'Line ' + n + ' is not a valid directive (it needs a colon, like "Disallow: /path").'}); return; }
+    var d = m[1].trim().toLowerCase(), v = m[2].trim();
+    if (d === 'user-agent') {
+      if (!v) { out.issues.push({level: 'error', line: n, msg: 'Line ' + n + ': the User-agent value is empty.'}); return; }
+      if (!cur || cur.sealed) { cur = {agents: [], rules: [], sealed: false, line: n}; out.groups.push(cur); }
+      cur.agents.push(v.toLowerCase());
+    } else if (d === 'allow' || d === 'disallow') {
+      if (!cur) { out.issues.push({level: 'error', line: n, msg: 'Line ' + n + ': "' + raw.trim() + '" comes before any User-agent line, so crawlers ignore it.'}); return; }
+      cur.sealed = true; cur.rules.push({type: d, path: v, line: n});
+    } else if (d === 'sitemap') {
+      out.sitemaps.push({url: v, line: n});
+    } else {
+      if (cur) cur.sealed = true;
+      out.issues.push({level: 'unknown', line: n, directive: d, msg: ''});
+    }
+  });
+  return out;
+}
+function rx(pattern) {
+  var anchored = /\$$/.test(pattern), p = anchored ? pattern.slice(0, -1) : pattern;
+  var src = p.replace(/[.+?^${}()|[\]\\]/g, '\\$&').replace(/\*/g, '.*');
+  return new RegExp('^' + src + (anchored ? '$' : ''));
+}
+function pickRules(parsed, token) {
+  var t = token.toLowerCase(), pool = [], found = false, g;
+  function collect(name) { var hit = false; parsed.groups.forEach(function (gr) { if (gr.agents.indexOf(name) !== -1) { hit = true; pool = pool.concat(gr.rules); } }); return hit; }
+  if (collect(t)) return {rules: pool, used: token};
+  if (G_FALLBACK[t] && collect(G_FALLBACK[t])) return {rules: pool, used: G_FALLBACK[t]};
+  if (collect('*')) return {rules: pool, used: '*'};
+  return {rules: [], used: ''};
+}
+function evaluate(parsed, token, path) {
+  if (/^\/robots\.txt$/.test(path.split('?')[0])) return {allowed: true, rule: null, used: '', why: '/robots.txt is always allowed.'};
+  var pr = pickRules(parsed, token), best = null, bestLen = -1;
+  pr.rules.forEach(function (r) {
+    if (!r.path) return;
+    var re;
+    try { re = rx(r.path); } catch (e) { return; }
+    if (!re.test(path)) return;
+    var len = r.path.length;
+    if (len > bestLen || (len === bestLen && r.type === 'allow' && best && best.type !== 'allow')) { best = r; bestLen = len; }
+  });
+  if (!best) return {allowed: true, rule: null, used: pr.used, why: pr.used ? 'No rule matches this path, so it is allowed.' : 'No group applies to this crawler, so everything is allowed.'};
+  return {allowed: best.type === 'allow', rule: best, used: pr.used, why: 'The most specific matching rule is "' + (best.type === 'allow' ? 'Allow' : 'Disallow') + ': ' + best.path + '" on line ' + best.line + '.'};
+}
+function toPath(input) {
+  var s = String(input).trim();
+  if (!s) return '';
+  if (/^https?:\/\//i.test(s)) { try { var u = new URL(s); return (u.pathname || '/') + u.search; } catch (e) { return ''; } }
+  s = s.split('#')[0];
+  return s.charAt(0) === '/' ? s : '/' + s;
+}
+/* ---------- 1. Generator ---------- */
+function addRule(ua, type, path) {
+  var row = el('div', 'cc-rule'), s1 = el('select'), s2 = el('select'), inp = el('input'), x = el('button', 'cc-x', 'Remove');
+  s1.setAttribute('aria-label', 'User-agent'); s2.setAttribute('aria-label', 'Allow or Disallow'); inp.setAttribute('aria-label', 'Path'); x.type = 'button';
+  UAS.forEach(function (u) { var o = el('option', '', u === '*' ? '* (all crawlers)' : u); o.value = u; s1.appendChild(o); });
+  [['disallow', 'Disallow'], ['allow', 'Allow']].forEach(function (p) { var o = el('option', '', p[1]); o.value = p[0]; s2.appendChild(o); });
+  s1.value = ua || '*'; s2.value = type || 'disallow'; inp.type = 'text'; inp.placeholder = '/private/'; inp.value = path || ''; inp.autocomplete = 'off';
+  [s1, s2, inp].forEach(function (e) { e.addEventListener('input', generate); e.addEventListener('change', generate); });
+  x.addEventListener('click', function () { row.parentNode.removeChild(row); generate(); });
+  row.appendChild(s1); row.appendChild(s2); row.appendChild(inp); row.appendChild(x); $('gRows').appendChild(row);
+}
+function generate() {
+  var groups = {}, order = [], warn = [], rows = $('gRows').children, i, hasRule = false;
+  for (i = 0; i < rows.length; i++) {
+    var ua = rows[i].children[0].value, type = rows[i].children[1].value, path = rows[i].children[2].value.trim();
+    if (!path) { warn.push('A rule with an empty path was ignored.'); continue; }
+    if (/\s/.test(path)) { warn.push('The path "' + path + '" contains a space, so it was left out.'); continue; }
+    if (/^https?:\/\//i.test(path)) { warn.push('Use a path such as /private/, not a full URL ("' + path + '"). It was left out.'); continue; }
+    if (path.charAt(0) !== '/' && path.charAt(0) !== '*') { warn.push('The path "' + path + '" should start with /. It was left out.'); continue; }
+    if (!groups[ua]) { groups[ua] = []; order.push(ua); }
+    groups[ua].push((type === 'allow' ? 'Allow: ' : 'Disallow: ') + path); hasRule = true;
+    if (type === 'disallow' && path === '/' && ua === '*') warn.push('"Disallow: /" for all crawlers blocks your whole site. Use it only for a site that is not ready for search engines.');
+    if (type === 'disallow' && /(\.css|\.js|\/css\/|\/js\/|wp-includes|wp-content\/themes)/i.test(path)) warn.push('Blocking CSS or JavaScript can stop Google from displaying your pages properly.');
+  }
+  var out = [];
+  if (!hasRule) out.push('User-agent: *\nAllow: /');
+  order.forEach(function (u) { out.push('User-agent: ' + u + '\n' + groups[u].join('\n')); });
+  var sm = [];
+  $('gSitemap').value.split(/\r?\n/).forEach(function (l) { l = l.trim(); if (!l) return; if (isHttp(l)) sm.push('Sitemap: ' + l); else warn.push('The sitemap "' + l + '" must be a full URL starting with https://. It was left out.'); });
+  var text = out.join('\n\n') + (sm.length ? '\n\n' + sm.join('\n') : '') + '\n';
+  state.generated = text; $('gOut').textContent = text;
+  var w = $('gWarn'); w.textContent = ''; warn.forEach(function (m) { w.appendChild(el('li', '', m)); }); w.hidden = !warn.length;
+}
+function preset(name) {
+  if (name === 'staging') addRule('*', 'disallow', '/');
+  if (name === 'typical') ['/admin/', '/cart/', '/checkout/', '/search'].forEach(function (p) { addRule('*', 'disallow', p); });
+  if (name === 'ai') ['GPTBot', 'ClaudeBot', 'Google-Extended', 'CCBot'].forEach(function (u) { addRule(u, 'disallow', '/'); });
+  generate();
+}
+/* ---------- 2. Audit, Test, AI ---------- */
+function auditText(text) {
+  var items = [], p = parse(text);
+  if (!String(text).trim()) return [{level: 'warn', msg: 'The robots.txt text is empty.'}];
+  if (new Blob([text]).size > 512000) items.push({level: 'warn', msg: 'The file is larger than 500 KiB. Google reads only the first 500 KiB.'});
+  p.issues.forEach(function (i) {
+    if (i.level === 'unknown') {
+      var d = i.directive;
+      if (d === 'noindex') items.push({level: 'warn', msg: 'Line ' + i.line + ': Google does not support "Noindex" in robots.txt. Use a meta robots tag or an X-Robots-Tag header instead.'});
+      else if (d === 'crawl-delay') items.push({level: 'info', msg: 'Line ' + i.line + ': Google ignores Crawl-delay. Some other crawlers, such as Bingbot, may follow it.'});
+      else if (d === 'host' || d === 'clean-param') items.push({level: 'info', msg: 'Line ' + i.line + ': "' + d + '" is used mainly by Yandex. Google ignores it.'});
+      else items.push({level: 'warn', msg: 'Line ' + i.line + ': "' + d + '" is not a standard robots.txt directive, so most crawlers ignore it.'});
+    } else items.push(i);
+  });
+  var star = false, seen = {};
+  p.groups.forEach(function (g) {
+    if (g.agents.indexOf('*') !== -1) star = true;
+    var keyset = {};
+    g.rules.forEach(function (r) {
+      var key = r.type + ':' + r.path;
+      if (!r.path) { if (r.type === 'allow') items.push({level: 'info', msg: 'Line ' + r.line + ': an empty Allow does nothing.'}); else items.push({level: 'info', msg: 'Line ' + r.line + ': an empty Disallow means nothing is blocked for this group.'}); return; }
+      if (/^https?:\/\//i.test(r.path)) items.push({level: 'error', msg: 'Line ' + r.line + ': use a path such as /private/, not a full URL.'});
+      else if (r.path.charAt(0) !== '/' && r.path.charAt(0) !== '*') items.push({level: 'warn', msg: 'Line ' + r.line + ': the path "' + r.path + '" should start with /.'});
+      if (r.path.indexOf('$') !== -1 && r.path.indexOf('$') !== r.path.length - 1) items.push({level: 'warn', msg: 'Line ' + r.line + ': "$" only works at the end of a path.'});
+      if (keyset[key]) items.push({level: 'warn', msg: 'Line ' + r.line + ': this rule repeats line ' + keyset[key] + '.'}); else keyset[key] = r.line;
+      var opp = (r.type === 'allow' ? 'disallow:' : 'allow:') + r.path;
+      if (keyset[opp] && !seen[opp + key]) { seen[opp + key] = 1; items.push({level: 'warn', msg: 'Line ' + r.line + ': "' + r.path + '" is both allowed and disallowed in the same group. Google uses Allow when the match length is equal.'}); }
+      if (r.type === 'disallow' && r.path === '/' && g.agents.indexOf('*') !== -1) items.push({level: 'warn', msg: 'Line ' + r.line + ': "Disallow: /" blocks the whole site for all crawlers.'});
+      if (r.type === 'disallow' && /(\.css|\.js|\/css\/|\/js\/|wp-includes)/i.test(r.path)) items.push({level: 'info', msg: 'Line ' + r.line + ': blocking CSS or JavaScript can stop Google from displaying pages properly.'});
+      if (r.type === 'disallow' && /(admin|login|private|backup|secret|config|staging)/i.test(r.path)) items.push({level: 'info', msg: 'Line ' + r.line + ': robots.txt is public, so "' + r.path + '" is visible to everyone. It does not protect the path. Use a login for private areas.'});
+    });
+  });
+  if (!p.groups.length) items.push({level: 'error', msg: 'No User-agent line was found, so crawlers have no rules to follow.'});
+  else if (!star) items.push({level: 'info', msg: 'There is no "User-agent: *" group. Crawlers that are not named here are allowed everywhere.'});
+  if (!p.sitemaps.length) items.push({level: 'info', msg: 'No Sitemap line was found. Adding one helps crawlers find your sitemap.'});
+  p.sitemaps.forEach(function (s) { if (isHttp(s.url)) items.push({level: 'ok', msg: 'Sitemap found on line ' + s.line + ': ' + s.url}); else items.push({level: 'error', msg: 'Line ' + s.line + ': the Sitemap value must be a full URL starting with https://.'}); });
+  items.push({level: 'info', msg: 'Disallow stops crawling, not indexing. To keep a page out of search results, use noindex and do not block that page here.'});
+  var order = {error: 0, warn: 1, info: 2, ok: 3};
+  items.sort(function (a, b) { return order[a.level] - order[b.level]; });
+  return items;
+}
+function renderItems(box, items) {
+  box.textContent = '';
+  var c = {error: 0, warn: 0, info: 0, ok: 0};
+  items.forEach(function (i) { c[i.level]++; var r = el('div', 'cc-item'); r.appendChild(el('span', 'cc-tag ' + i.level, i.level)); r.appendChild(el('span', '', i.msg)); box.appendChild(r); });
+  box.hidden = false; return c;
+}
+function runAudit() {
+  var items = auditText($('rtxt').value), c = renderItems($('aOut'), items);
+  state.audit = {items: items, counts: c}; toast('Audit finished.');
+}
+function runTest() {
+  var box = $('tOut'); box.textContent = '';
+  var path = toPath($('tUrl').value), token = $('tUa').value.trim();
+  if (!$('rtxt').value.trim()) { box.appendChild(el('div', 'cc-meta', 'Paste your robots.txt text above first.')); box.hidden = false; return; }
+  if (!path) { box.appendChild(el('div', 'cc-meta', 'Enter a URL or a path to test, for example /blog/post/.')); box.hidden = false; return; }
+  if (!token) token = '*';
+  var tokenNote = /[\/\s]/.test(token) ? 'Enter the crawler name (the product token), for example Googlebot, not the full user-agent string.' : '';
+  var r = evaluate(parse($('rtxt').value), token.replace(/\/.*$/, '').split(/\s+/)[0], path);
+  var row = el('div', 'cc-item'); row.appendChild(el('span', 'cc-tag ' + (r.allowed ? 'good' : 'bad'), r.allowed ? 'Allowed' : 'Blocked'));
+  row.appendChild(el('span', '', path + ' for ' + token + (r.used ? ' (group: ' + r.used + ')' : '') + '. ' + r.why + (tokenNote ? ' ' + tokenNote : '')));
+  box.appendChild(row); box.hidden = false;
+  state.test = {path: path, ua: token, allowed: r.allowed, why: r.why};
+}
+function runAi() {
+  var box = $('aiOut'); box.textContent = '';
+  if (!$('rtxt').value.trim()) { box.appendChild(el('div', 'cc-meta', 'Paste your robots.txt text above first.')); box.hidden = false; return; }
+  var p = parse($('rtxt').value), tw = el('div', 'cc-tw'), t = el('table', 'cc-table'), th = el('thead'), tr = el('tr');
+  ['Crawler', 'Type', 'Status for /', 'What it does'].forEach(function (h) { tr.appendChild(el('th', '', h)); }); th.appendChild(tr); t.appendChild(th);
+  var tb = el('tbody'), res = [];
+  AI_BOTS.forEach(function (b) {
+    var r = evaluate(p, b[0], '/'), row = el('tr'), st = el('td'), tag = el('span', 'cc-tag ' + (r.allowed ? 'good' : 'bad'), r.allowed ? 'Allowed' : 'Blocked');
+    row.appendChild(el('td', '', b[0] + ' (' + b[1] + ')')); row.appendChild(el('td', '', b[2])); st.appendChild(tag); row.appendChild(st); row.appendChild(el('td', '', b[3])); tb.appendChild(row);
+    res.push({bot: b[0], type: b[2], allowed: r.allowed});
+  });
+  t.appendChild(tb); tw.appendChild(t); box.appendChild(tw);
+  box.appendChild(el('p', 'cc-meta', 'Bot names and behavior change, so check each company\'s own documentation. Robots.txt is a request that well-behaved crawlers follow. It is not a security control.'));
+  box.hidden = false; state.ai = res;
+}
+/* ---------- 3. Meta robots ---------- */
+function buildMeta() {
+  var parts = [$('mIndex').value, $('mFollow').value];
+  if ($('mNoarchive').checked) parts.push('noarchive');
+  if ($('mNosnippet').checked) parts.push('nosnippet');
+  if ($('mNoimage').checked) parts.push('noimageindex');
+  var sn = $('mSnippet').value.trim(), im = $('mImage').value, vd = $('mVideo').value.trim(), warn = [];
+  if (sn !== '' && /^-?\d+$/.test(sn) && +sn >= -1) { if ($('mNosnippet').checked) warn.push('nosnippet already hides snippets, so max-snippet has no effect.'); else parts.push('max-snippet:' + sn); } else if (sn !== '') warn.push('max-snippet must be a whole number, 0 or more, or -1.');
+  if (im) parts.push('max-image-preview:' + im);
+  if (vd !== '' && /^-?\d+$/.test(vd) && +vd >= -1) parts.push('max-video-preview:' + vd); else if (vd !== '') warn.push('max-video-preview must be a whole number, 0 or more, or -1.');
+  var name = $('mName').value, content = parts.join(', ');
+  var tag = '<meta name="' + name + '" content="' + content + '">', header = 'X-Robots-Tag: ' + (name === 'robots' ? '' : name + ': ') + content;
+  $('mOut').textContent = tag; $('mHeader').textContent = header;
+  var w = $('mWarn'); w.textContent = ''; warn.forEach(function (m) { w.appendChild(el('li', '', m)); }); w.hidden = !warn.length;
+  var n = $('mNote'); n.textContent = ($('mIndex').value === 'index' && $('mFollow').value === 'follow' && parts.length === 2) ? 'index, follow is the default. You only need this tag if you add other directives.' : ($('mIndex').value === 'noindex' ? 'For noindex to work, do not block this page in robots.txt. Crawlers must be able to read the tag.' : '');
+  state.meta = {tag: tag, header: header};
+}
+/* ---------- 4. HTTP status ---------- */
+function runStatus() {
+  var box = $('sOut'), url = $('sUrl').value.trim(); box.textContent = '';
+  if (!isHttp(url)) { box.appendChild(el('div', 'cc-meta', 'Enter a full URL starting with https://')); box.hidden = false; return; }
+  box.appendChild(el('div', 'cc-meta', 'Checking...')); box.hidden = false;
+  var ctl = typeof AbortController !== 'undefined' ? new AbortController() : null, timer = setTimeout(function () { if (ctl) ctl.abort(); }, 8000);
+  function show(r, method) {
+    clearTimeout(timer); box.textContent = '';
+    var row = el('div', 'cc-item'), cls = r.ok ? 'good' : (r.status >= 400 ? 'bad' : 'warn');
+    row.appendChild(el('span', 'cc-tag ' + cls, String(r.status)));
+    var msg = (r.statusText || 'Response') + ' (' + method + ').' + (r.redirected ? ' The browser followed a redirect to ' + r.url + '.' : '') + (r.headers && r.headers.get && r.headers.get('content-type') ? ' Content type: ' + r.headers.get('content-type') + '.' : '');
+    row.appendChild(el('span', '', msg)); box.appendChild(row); state.status = {url: url, status: r.status, text: r.statusText};
+  }
+  function fail() {
+    clearTimeout(timer); box.textContent = '';
+    box.appendChild(el('div', 'cc-meta', 'The browser could not read this URL. The site may not allow requests from other websites, the address may be wrong, or you may be offline. This does not mean the page is down.')); state.status = {url: url, status: 'unreadable'};
+  }
+  var opts = {method: 'HEAD', mode: 'cors', redirect: 'follow', cache: 'no-store'}; if (ctl) opts.signal = ctl.signal;
+  fetch(url, opts).then(function (r) {
+    if (r.status === 405 || r.status === 501) { var o2 = {method: 'GET', mode: 'cors', redirect: 'follow', cache: 'no-store'}; if (ctl) o2.signal = ctl.signal; return fetch(url, o2).then(function (g) { show(g, 'GET'); }); }
+    show(r, 'HEAD');
+  }).catch(fail);
+}
+/* ---------- 5. Report ---------- */
+function exportReport() {
+  var L = ['Ruvixsa Crawl & Index Control report', 'Created: ' + new Date().toISOString(), ''];
+  if (state.generated) { L.push('== Generated robots.txt =='); L.push(state.generated.trim()); L.push(''); }
+  if (state.audit) { L.push('== Audit (' + state.audit.counts.error + ' errors, ' + state.audit.counts.warn + ' warnings) =='); state.audit.items.forEach(function (i) { L.push('[' + i.level.toUpperCase() + '] ' + i.msg); }); L.push(''); }
+  if (state.test) { L.push('== URL test =='); L.push((state.test.allowed ? 'ALLOWED' : 'BLOCKED') + ': ' + state.test.path + ' for ' + state.test.ua + '. ' + state.test.why); L.push(''); }
+  if (state.ai) { L.push('== AI crawler check =='); state.ai.forEach(function (b) { L.push((b.allowed ? 'Allowed' : 'Blocked') + ': ' + b.bot + ' (' + b.type + ')'); }); L.push(''); }
+  if (state.meta) { L.push('== Meta robots =='); L.push(state.meta.tag); L.push(state.meta.header); L.push(''); }
+  if (state.status) { L.push('== HTTP status =='); L.push(state.status.url + ' -> ' + state.status.status); L.push(''); }
+  if (L.length <= 4) { toast('Run a tool first, then export.'); return; }
+  download('ruvixsa-crawl-report.txt', L.join('\r\n')); toast('Report downloaded.');
+}
+var EXAMPLE = 'User-agent: *\nDisallow: /admin/\nDisallow: /search\nAllow: /admin/help/\n\nUser-agent: GPTBot\nDisallow: /\n\nSitemap: https://example.com/sitemap.xml\n';
+$('gAdd').addEventListener('click', function () { addRule('*', 'disallow', ''); generate(); });
+$('gSitemap').addEventListener('input', generate);
+$('pStaging').addEventListener('click', function () { preset('staging'); });
+$('pTypical').addEventListener('click', function () { preset('typical'); });
+$('pAI').addEventListener('click', function () { preset('ai'); });
+$('gReset').addEventListener('click', function () { $('gRows').textContent = ''; $('gSitemap').value = ''; generate(); });
+$('gCopy').addEventListener('click', function () { copyText(state.generated, 'robots.txt copied.'); });
+$('gDownload').addEventListener('click', function () { download('robots.txt', state.generated); });
+$('useGenerated').addEventListener('click', function () { $('rtxt').value = state.generated; toast('Generated file loaded.'); });
+$('loadExample').addEventListener('click', function () { $('rtxt').value = EXAMPLE; $('tUrl').value = '/admin/settings'; $('tUa').value = 'Googlebot'; });
+$('clearRtxt').addEventListener('click', function () { $('rtxt').value = ''; ['aOut', 'tOut', 'aiOut'].forEach(function (id) { $(id).textContent = ''; $(id).hidden = true; }); state.audit = state.test = state.ai = null; });
+$('aRun').addEventListener('click', runAudit);
+$('tRun').addEventListener('click', runTest);
+$('aiRun').addEventListener('click', runAi);
+['mName', 'mIndex', 'mFollow', 'mNoarchive', 'mNosnippet', 'mNoimage', 'mSnippet', 'mImage', 'mVideo'].forEach(function (id) { $(id).addEventListener('input', buildMeta); $(id).addEventListener('change', buildMeta); });
+$('mCopy').addEventListener('click', function () { copyText($('mOut').textContent, 'Meta tag copied.'); });
+$('mCopyH').addEventListener('click', function () { copyText($('mHeader').textContent, 'Header copied.'); });
+$('sRun').addEventListener('click', runStatus);
+$('xRun').addEventListener('click', exportReport);
+generate(); buildMeta();
+window.__cc = {parse: parse, evaluate: evaluate, auditText: auditText, toPath: toPath};
+})();
+</script>
+<script>
+document.getElementById("rxtg").addEventListener("click",function(){var d=document.documentElement,n=d.getAttribute("data-theme")==="light"?"dark":"light";d.setAttribute("data-theme",n);try{localStorage.setItem("rvt",n)}catch(e){}});
+document.querySelectorAll('.rx-f a[href="#"]').forEach(function(a){a.addEventListener("click",function(e){e.preventDefault()})});
+</script>
+</body>
+</html>
